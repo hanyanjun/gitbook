@@ -14,7 +14,7 @@ notifications:      #通知
 install:                             #install阶段 安装依赖
   - npm install -g gitbook-cli       #安装gitbook 
   - gitbook install                  #安装插件
-  - npm install -g gitbook-summary   #使自动生成SUMMARY.md的一个工具
+  # - npm install -g gitbook-summary   #使自动生成SUMMARY.md的一个工具
 
 script:                              #script阶段 运行脚本
   - book sm                          #利用安装的工具gitbook-summary自动生成SUMMARY.md文件
