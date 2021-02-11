@@ -23,7 +23,9 @@ script:                              #script阶段 运行脚本
 
 after_script:                        #script阶段之后执行 
   - cd _book                         #进入_book目录
-  - git init                         
+  - git init          
+  - git config user.name "${U_NAME}"
+  - git config user.email "${U_EMAIL}"               
   - git remote add origin https://github.com/hanyanjun/gitbook.git    #设置要托管到的仓库名
   - git add .                               #添加_book目录下的所有文件
   - git commit -m "Updated By Travis-CI With Build $TRAVIS_BUILD_NUMBER For Github Pages" 
