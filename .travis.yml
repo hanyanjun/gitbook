@@ -28,7 +28,7 @@ after_script:                        #script阶段之后执行
   - git add .                               #添加_book目录下的所有文件
   - git commit -m "Updated By Travis-CI With Build $TRAVIS_BUILD_NUMBER For Github Pages" 
   - git branch -M master
-  - git push --force --quiet "https://${TOKEN}@${REF}" main:gh-pages  #强制推送到gh-pages分支
+  - git push --force --quiet "https://${TOKEN}@${REF}" master:gh-pages  #强制推送到gh-pages分支
 
 branches:
   only:
