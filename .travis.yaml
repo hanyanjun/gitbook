@@ -10,6 +10,7 @@ notifications:      #通知
     on_success: change
     on_failure: always
 
+    
 install:                             #install阶段 安装依赖
   - npm install -g gitbook-cli       #安装gitbook 
   - gitbook install                  #安装插件
