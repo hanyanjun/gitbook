@@ -13,9 +13,9 @@
             "buttons" : [
                 {
                     "user" : "hanyanjun",
-                    "repo": "JavaScript-Plugin-Architecture",
+                    "repo": "gitbook",
                     "type": "star",
-                    "size": "large"
+                    "size": "default"
                 }
             ]
         }
