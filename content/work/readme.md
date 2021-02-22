@@ -2,26 +2,11 @@
 
 - html
 - css
+- svg
 - javascript
 - es6
 - ts
 
-#### 构建工具
-
-- webpack
-- gulp
-- rollup
-- ci
-- docker
-
-#### 框架
-
-- vue
-- react
-- node
-- axios
-- koa2
-- router
 
 #### 协议
 
@@ -34,6 +19,28 @@
 
 - 排序
 - 场景
+
+#### 构建工具
+
+- webpack
+- gulp
+- rollup
+- ci
+- docker
+
+#### 版本工具
+
+- git 
+- svn
+
+#### 框架
+
+- vue
+- react
+- node
+- axios
+- koa2
+- router
 
 #### 优化
 

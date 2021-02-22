@@ -18,20 +18,12 @@ expandable-chapters-small 菜单栏可以折叠
 - gitbook-button配置
 ```
 {
-   
-   
   "plugins": [
     "github-buttons"
   ],
   "pluginsConfig": {
-   
-   
     "github-buttons": {
-   
-   
       "buttons": [{
-   
-   
         "user": "azu",
         "repo": "JavaScript-Plugin-Architecture",
         "type": "star",
