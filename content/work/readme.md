@@ -27,6 +27,7 @@
 - rollup
 - ci
 - docker
+- 测试
 
 #### 版本工具
 

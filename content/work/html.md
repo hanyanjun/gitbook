@@ -17,3 +17,13 @@
 ```javascript
 h1、h2、h3、h4、h5、h6、p、dt
 ```
+
+
+###### strong em  和 b i 标签有什么区别
+- <b> <i> 是视觉元素；表示 无意义的 加粗和斜体；
+- <strong> <em> 是表达元素；表示 有意义的 加粗和斜体； em 表示一般强调的文本， strong表示 重要强调的问题；
+> 即 b i为 无意义标签； strong em 为有意义标签；
+
+
+###### input 类型
+> text 、 password 、 submit 、 radio 、 checkbox 、button 、 number 、 date 、 color 、 range 、 month 、 week 、time 、 datetime 、datetime-local 、email 、search 、 te 、 url
