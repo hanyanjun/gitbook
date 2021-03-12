@@ -1,4 +1,8 @@
+###### 模块化 amd cmd
+> amd require.js  依赖前置
+> cmd sea.js    依赖就近
 
+###### 
 
 ###### JSON.stringify
 
