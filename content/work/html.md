@@ -1,4 +1,4 @@
-
+<!-- 
 
 ###### <img> 标签 title 和 alt 有什么区别
 
@@ -26,4 +26,4 @@ h1、h2、h3、h4、h5、h6、p、dt
 
 
 ###### input 类型
-> text 、 password 、 submit 、 radio 、 checkbox 、button 、 number 、 date 、 color 、 range 、 month 、 week 、time 、 datetime 、datetime-local 、email 、search 、 te 、 url
+> text 、 password 、 submit 、 radio 、 checkbox 、button 、 number 、 date 、 color 、 range 、 month 、 week 、time 、 datetime 、datetime-local 、email 、search 、 te 、 url -->
