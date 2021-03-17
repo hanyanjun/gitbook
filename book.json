@@ -6,7 +6,8 @@
          "splitter", 
          "copy-code-button",
          "expandable-chapters-small",
-         "github-buttons"
+         "github-buttons",
+         "simple-page-toc"
     ],
     "pluginsConfig" : {
         "github-buttons" : {
