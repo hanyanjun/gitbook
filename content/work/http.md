@@ -35,7 +35,7 @@
 - 强制缓存
 
 ![强制缓存](../../assets/http/强制缓存.jpg)
-![强制缓存可选值](../../assets/http/强制缓存值.jpg)
+![强制缓存可选值](../../assets/http/强缓存值.jpg)
 
 
 
@@ -62,6 +62,10 @@ http各时期缓存对比：
 > 通过cache-control、eTag、last-modified 对比
 
 > last-modified 只能到秒级，而且只要文件只要有保存那么时间就会被修改，一个是时间维度不够，一个修改缺乏准确性，所以出现了eTag；
+
+对比：
+![对比](../../assets/http/对比.jpg)
+
 
 
 
