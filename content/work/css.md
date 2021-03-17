@@ -29,8 +29,10 @@
 > flex grid  floa  absolute
 
 ###### @import link 区别
-> 加载时机
-> 引入类型
+> 加载时机： link 解析到加载， @import 页面加载后加载；
+> 引入类型： link 可加载其他，@import 只适用于css；
+> 权重： link权重大于@import，@import引入的css 会置于顶部，如果样式有重复则@import中样式不会生效；
+> 可通过dom控制： link可以通过js中dom接口动态插入，@import则不可以；
 
 
 ###### positon : absolute 定位原点
@@ -46,6 +48,16 @@
 > 如果是padding或者margin竖直方向的属性则是相对于包含块的宽度。
 
 
+###### 渲染过程
+```javascript
+
+dom tree 
+css tree 
+layout
+paint 
+compositing
+
+```
 
 - [掘金](https://juejin.cn/post/6844904117819850765)
 - [腾讯云](https://cloud.tencent.com/developer/article/1608771)
