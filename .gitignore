@@ -1,7 +1,6 @@
 
 # dependencies
 **/node_modules
-**/_book
 
 # misc
 .DS_Store
