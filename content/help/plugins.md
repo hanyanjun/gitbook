@@ -177,7 +177,7 @@ editor.renderer.updateFontSize();
 ]
 ```
 使用示例:
-
+```javascript
 {%ace edit=true, lang='c_cpp'%}
 // This is a hello world program for C.
 #include <stdio.h>
@@ -187,6 +187,7 @@ int main(){
   return 1;
 }
 {%endace%}
+```
 
 ## Emphasize
 为文字加上底色
