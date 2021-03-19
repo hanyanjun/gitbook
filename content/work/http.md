@@ -1,12 +1,9 @@
- <!-- toc --> 
-###### http概念  <!-- toc --> 
- <!-- toc --> 
+
+###### http概念 
 > HTTP 是一个在计算机世界里专门在「两点」之间「传输」文字、图片、音频、视频等「超文本」数据的「约定和规范」。   
 
 
- <!-- toc --> 
-###### 状态码  <!-- toc --> 
- <!-- toc --> 
+###### 状态码  
 
 ![状态码](../../assets/http/状态码.png)
 
@@ -105,6 +102,8 @@ http各时期缓存对比：
 ![流程2](../../assets/http/流程2.jpg)
 
 
+###### 网络安全
+
 ###### 本地缓存
 ![本地缓存]](../../assets/http/本地缓存.jpg)
 
@@ -114,3 +113,4 @@ http各时期缓存对比：
 - [硬核！30 张图解 HTTP 常见的面试题](https://www.cnblogs.com/xiaolincoding/p/12442435.html)
 - [深入理解HTTP缓存机制及原理](https://juejin.cn/post/6844903801778864136)
 - [一文读懂http缓存（超详细）](https://www.jianshu.com/p/227cee9c8d15)
+- [Content Security Policy 入门教程](http://www.ruanyifeng.com/blog/2016/09/csp.html)
