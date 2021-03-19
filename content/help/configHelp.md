@@ -42,9 +42,10 @@ expandable-chapters-small 菜单栏可以折叠
   }
 }
 ```
+
 Option	Description	备注
-user	GitHub username that owns the repo/Username to sponsor	必须，用户名
-repo	GitHub repository to pull the forks and watchers counts	必须，仓库名
-type	Type of button to show: watch, fork, sponsor, or follow	必须，4种类型之一
-count	Show the optional watchers or forks count: none by default or true	可选，是否显示计数
-size	Optional flag for using a larger button: none by default or large	可选，按钮大小
+- user	GitHub username that owns the repo/Username to sponsor	必须，用户名
+- repo	GitHub repository to pull the forks and watchers counts	必须，仓库名
+- type	Type of button to show: watch, fork, sponsor, or follow	必须，4种类型之一
+- count	Show the optional watchers or forks count: none by default or true	可选，是否显示计数
+- size	Optional flag for using a larger button: none by default or large	可选，按钮大小
