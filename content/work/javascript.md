@@ -1,3 +1,4 @@
+`<!-- toc -->`
 ###### 模块化 amd cmd
 > amd require.js  依赖前置
 > cmd sea.js    依赖就近
@@ -14,7 +15,7 @@
 - undefined、任意的函数以及 symbol 被 JSON.stringify() 作为单独的值进行序列化时，都会返回 undefined
 - NaN 和 Infinity 格式的数值及 null 都会被当做 null
 
-###### js ==
+###### js==判断逻辑
 - null undefined 相等
 - 一方为boolean ， boolean 转化为数字；
 - 一方为数字 ， 另一方转化为数字；
@@ -24,5 +25,6 @@
 
 
 
+
 ###### 参考文章
->[参考链接](https://segmentfault.com/a/1190000021230185)
+>[你不知道的 JSON.stringify() 的威力](https://segmentfault.com/a/1190000021230185)
