@@ -11,9 +11,9 @@
 ## js中 defer async
 
 > [!NOTE|style:flat]
-> 都是异步执行js 的方式； 
-> defer : 立即下载 异步执行；（页面加载后执行）（DomContentLoaded）
-> async : 异步下载 异步执行；（页面加载后执行）（DomContentLoaded）
+> 都是异步执行js 的方式；   
+> defer : 立即下载 异步执行；（页面加载后执行）（DomContentLoaded）   
+> async : 异步下载 异步执行；（页面加载后执行）（DomContentLoaded）   
 
 ## JSON.stringify
 

@@ -3,8 +3,9 @@
 ## img 标签 title 和 alt 有什么区别
 
 
-> [!NOTE|style:flat]
+> [!NOTE|style:flat]   
 > title是global attributes之一，用于为元素提供附加的 advisory information。通常当鼠标滑动到元素上的时候显示。    
+
 ---
 
 > [!NOTE|style:flat]
@@ -17,17 +18,16 @@
 > 内联标签不能包含块标签    
 > p标签不能包含块标签    
 > 有几个特殊的块级元素只能包含内嵌元素，不能再包含块级元素，这几个特殊的标签是：
-
-```
 h1、h2、h3、h4、h5、h6、p、dt
-```
 
 
 ## strong em  和 b i 标签有什么区别
 
-> [!NOTE|style:flat]
+> [!NOTE|style:flat]  
 > b 、 i 是视觉元素；表示 无意义的 加粗和斜体；    
+
 ---
+
 > [!NOTE|style:flat]
 > strong 、em 是表达元素；表示 有意义的 加粗和斜体； em 表示一般强调的文本， strong表示 重要强调的问题；
 

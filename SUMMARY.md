@@ -12,3 +12,5 @@
     * [原生js](content/work/javascript.md)
     * [http](content/work/http.md)
     * [vue](content/work/vue.md)
+    * [vue原理](content/work/vue原理.md)
+    * [测试](content/work/测试.md)

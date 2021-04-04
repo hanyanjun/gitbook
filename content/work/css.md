@@ -9,12 +9,19 @@
 > 本质为css选择器；主要为：用户行为等自动添加的样式提供可供css选择的样式控制；如：:hover
 
 ## 如何实现 宽高比为4 :3 的div
+
+> [!TIP|style:flat]
 > 利用padding ， 当 margin padding left/top 取值百分比，以父级div 的宽度计算；
 
 
 ## 什么是margin重叠
+
+> [!TIP|style:flat]
 > 相邻元素margin 重叠 ， 父子元素margin 重叠；
 
+
+
+> [!DANGER|style:flat]
 ```javascript
 如果都是正边界，结果的边界宽度是相邻边界宽度中最大的值
 如果出现负边界，则在最大的正边界中减去绝对值最大的负边界
@@ -26,6 +33,9 @@
 > flex : 1  => 1 1 auto;
 
 ## 圣杯布局 双飞翼布局
+
+
+> [!TIP|style:flat]
 > flex grid  floa  absolute
 
 ## @import link 区别
@@ -51,11 +61,11 @@
 ## 渲染过程
 
 > [!NOTE|style:flat]
-> dom tree   
-> css tree    
-> layout   
-> paint   
-> compositing
+- dom tree   
+- css tree    
+- layout   
+- paint   
+- compositing
 
 ## 参考文章
 - [掘金](https://juejin.cn/post/6844904117819850765)

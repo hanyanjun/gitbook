@@ -50,14 +50,16 @@
 
 > [!NOTE|style:flat]
 - http/1.0
-> 通过过期时间：Expires， 服务器时间和客户端时间不一致会出问题；
+> 通过过期时间：Expires， 服务器时间和客户端时间不一致会出问题；  
+
 ---
+
 > [!NOTE|style:flat]
 - http/1.1
 > 通过cache-control、eTag、last-modified 对比
 > last-modified 只能到秒级，而且只要文件只要有保存那么时间就会被修改，一个是时间维度不够，一个修改缺乏准确性，所以出现了eTag；
 
-对比：
+- 对比：
 ![对比](../../assets/http/对比.jpg)
 
 ### 前端如何设置缓存

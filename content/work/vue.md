@@ -9,7 +9,7 @@
 
 ---
 
-> [!TIP|style:flat]
+> [!DANGER|style:flat]
 > 更新组件时  
 > beforeUpdate(父) -> beforeUpdate(子) -> updated(子) -> updated(父)
 
@@ -21,7 +21,7 @@
 > 通过this.$nexttick获取
 
 ### 动态组件
-```
+```vue
 <template>
 <component :is="baseCom"/>
 </template>
@@ -40,7 +40,7 @@ export default {
 ```
 
 ### 异步组件
-```
+```vue
 <template>
 <Com v-if={showCom}/>
 <button  @click={changeCom}/>
@@ -68,7 +68,7 @@ export default {
 > 如果无keep-alive 每次切换状态会触发组件的destoryed和mounted方法，而加上后组件被缓存，mounted只会触发一次，destoryed不会触发       
 > v-show 通过css 属性来进行组件缓存，keep-alive通过组件类缓存
 
-```
+```vue
 <template>
 <button @click="changeStatus('a')" />
 <button @click="changeStatus('b')" />
@@ -104,7 +104,11 @@ export default {
 
 - mixin.js
 
-```
+```vue
+<template>
+
+</template>
+<script>
 export default {
     data(){
         return {
@@ -120,12 +124,13 @@ export default {
         }
     }
 }
+</script>
 
 ```
 
 - index.vue  
 
-```
+```vue
 <template>
 <div>
     <p>{{city}}</p>
@@ -148,12 +153,11 @@ export default {
 </script>
 ```
 
-> [!TIP|style:flat]
+> [!NOTE|style:flat]
 - 优势
 > 逻辑复用
-  
+
 ---
-hr
 
 > [!DANGER|style:flat]
 - 劣势
