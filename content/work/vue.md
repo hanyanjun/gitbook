@@ -1,4 +1,3 @@
-<!-- toc -->
 
 ## vue使用知识点
 
@@ -6,7 +5,7 @@
 
 > [!NOTE|style:flat]
 > 初始化组件时  
-> created(父) -> created(子) -> mounted(子) -> mounted ->(父)
+> created(父) -> created(子) -> mounted(子) -> mounted ->(父)   
 
 
 > [!TIP|style:flat]
@@ -17,7 +16,7 @@
 ### vue组件更新之后获取最新DOM
 
 
-> [!TIP|style:flat]
+> [!NOTE|style:flat]
 > 通过this.$nexttick获取
 
 ### 动态组件
@@ -150,7 +149,7 @@ export default {
 
 > [!TIP|style:flat]
 - 优势
-> 逻辑复用
+> 逻辑复用  
 
 > [!DANGER|style:flat]
 - 劣势
@@ -188,6 +187,3 @@ routes : [
 
 ## diff算法相关
 
-
-
-<!-- endtoc -->
