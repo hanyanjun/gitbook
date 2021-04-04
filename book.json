@@ -8,9 +8,16 @@
          "expandable-chapters-small",
          "github-buttons",
          "anchor-navigation-ex",
-         "flexible-alerts"
+         "flexible-alerts",
+         "prism", 
+         "-highlight"
     ],
     "pluginsConfig" : {
+        "prism": {
+            "css": [
+              "prismjs/themes/prism-vsc-dark-plus.css"
+            ]
+        },
         "github-buttons" : {
             "buttons" : [
                 {

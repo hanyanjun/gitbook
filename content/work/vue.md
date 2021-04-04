@@ -7,6 +7,7 @@
 > 初始化组件时  
 > created(父) -> created(子) -> mounted(子) -> mounted ->(父)   
 
+---
 
 > [!TIP|style:flat]
 > 更新组件时  
@@ -149,7 +150,10 @@ export default {
 
 > [!TIP|style:flat]
 - 优势
-> 逻辑复用  
+> 逻辑复用
+  
+---
+hr
 
 > [!DANGER|style:flat]
 - 劣势
@@ -183,7 +187,3 @@ routes : [
     {path : 'user/:id' , component : ()=> import("../../user.vue")}
 ]
 ```
-
-
-## diff算法相关
-

@@ -1,4 +1,3 @@
-`<!-- toc -->`
 # GitBook 插件  
 <!--email_off-->  
 记录一些实用的插件, 如果要指定插件的版本可以使用 `plugin@0.3.1`。下面的插件在 GitBook 的 `3.2.3` 版本中可以正常工作，因为一些插件可能不会随着 GitBook 版本的升级而升级，即下面的插件可能不适用高版本的 GitBook，所以这里指定了 GitBook 的版本。另外本文记录的插件在 Linux 下都是可以正确工作的，windows 系统没有测试。这里只是列举了一部分插件，如果有其它的需求，可以到 [插件官网](https://plugins.gitbook.com/) 区搜索相关插件。
@@ -47,6 +46,36 @@
 - [summary - 自动生成目录](#summary)
 
 
+## prsim
+[插件地址](https://github.com/gaearon/gitbook-plugin-prism)
+[主题地址](https://github.com/PrismJS/prism-themes)
+```json
+{
+  "plugins": ["prism", "-highlight"]
+}
+"pluginsConfig": {
+  "prism": {
+    "css": [
+      "prismjs/themes/prism-solarizedlight.css"
+    ]
+  }
+}
+"pluginsConfig": {
+  "prism": {
+    "lang": {
+      "flow": "typescript"
+    }
+  }
+}
+"pluginsConfig": {
+  "prism": {
+    "ignore": [
+      "mermaid",
+      "eval-js"
+    ]
+  }
+}
+```
 
 ## Copy-code-button
 为代码块添加复制的按钮。

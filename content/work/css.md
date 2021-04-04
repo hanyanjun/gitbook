@@ -1,4 +1,4 @@
-###### 伪类和伪元素
+## 伪类和伪元素
 
 ![伪类](../../assets/css-伪类.png)
 
@@ -8,11 +8,11 @@
 - 伪类
 > 本质为css选择器；主要为：用户行为等自动添加的样式提供可供css选择的样式控制；如：:hover
 
-###### 如何实现 宽高比为4 :3 的div
+## 如何实现 宽高比为4 :3 的div
 > 利用padding ， 当 margin padding left/top 取值百分比，以父级div 的宽度计算；
 
 
-###### 什么是margin重叠
+## 什么是margin重叠
 > 相邻元素margin 重叠 ， 父子元素margin 重叠；
 
 ```javascript
@@ -21,45 +21,43 @@
 如果没有正边界，则从零中减去绝对值最大的负边界
 ```
 
-###### flex
+## flex
 > flex : inital  => 0 1 auto ; auto => 1 1 auto ; none => 0 0 auto;
 > flex : 1  => 1 1 auto;
 
-###### 圣杯布局 双飞翼布局
+## 圣杯布局 双飞翼布局
 > flex grid  floa  absolute
 
-###### @import link 区别
+## @import link 区别
 > 加载时机： link 解析到加载， @import 页面加载后加载；
 > 引入类型： link 可加载其他，@import 只适用于css；
 > 权重： link权重大于@import，@import引入的css 会置于顶部，如果样式有重复则@import中样式不会生效；
 > 可通过dom控制： link可以通过js中dom接口动态插入，@import则不可以；
 
 
-###### positon : absolute 定位原点
+## positon : absolute 定位原点
 > 不设置left top ， 以祖先元素中position中static中的第一个元素的content位置为起始位置，如果设置left 0 top 0 以padding 为起始位置；
 
 
-###### 绝对定位元素与非绝对定位元素的百分比计算的区别
+## 绝对定位元素与非绝对定位元素的百分比计算的区别
 > 绝对定位元素的宽高百分比是相对于临近的position不为static的祖先元素的paddingbox来计算的。
 非绝对定位元素的宽高百分比则是相对于父元素的contentbox来计算的。
 
-###### 元素竖向的百分比设定是相对于容器的高度吗？
+## 元素竖向的百分比设定是相对于容器的高度吗？
 > 如果是height的话，是相对于包含块的高度。
 > 如果是padding或者margin竖直方向的属性则是相对于包含块的宽度。
 
 
-###### 渲染过程
-```javascript
+## 渲染过程
 
-dom tree 
-css tree 
-layout
-paint 
-compositing
+> [!NOTE|style:flat]
+> dom tree   
+> css tree    
+> layout   
+> paint   
+> compositing
 
-```
-
-###### 参考文章
+## 参考文章
 - [掘金](https://juejin.cn/post/6844904117819850765)
 - [腾讯云](https://cloud.tencent.com/developer/article/1608771)
 
