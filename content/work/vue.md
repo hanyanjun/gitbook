@@ -153,14 +153,14 @@ export default {
 </script>
 ```
 
+- 优势   
 > [!NOTE|style:flat]
-- 优势
 - 逻辑复用
 
 ---
 
+- 劣势   
 > [!DANGER|style:flat]
-- 劣势
 - 变量来源不明确，不利于阅读  
 - 多个mixin可能命名重复  
 - 复杂度高，可能出现一对多，多对一，多对多关系
