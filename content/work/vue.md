@@ -1,5 +1,4 @@
-`<!-- toc -->`
-
+<!-- toc -->
 
 ## vue使用知识点
 
@@ -153,7 +152,7 @@ export default {
 - 优势
 > 逻辑复用
 
-> [!ATTENTION|style:flat]
+> [!DANGER|style:flat]
 - 劣势
 > 变量来源不明确，不利于阅读  
 > 多个mixin可能命名重复  
@@ -189,3 +188,6 @@ routes : [
 
 ## diff算法相关
 
+
+
+<!-- endtoc -->

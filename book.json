@@ -7,15 +7,10 @@
          "copy-code-button",
          "expandable-chapters-small",
          "github-buttons",
-         "simple-page-toc",
          "anchor-navigation-ex",
          "flexible-alerts"
     ],
     "pluginsConfig" : {
-        "simple-page-toc": {
-            "maxDepth": 5,
-            "skipFirstH1": true
-        },
         "github-buttons" : {
             "buttons" : [
                 {
