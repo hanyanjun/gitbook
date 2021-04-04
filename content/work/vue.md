@@ -5,12 +5,12 @@
 
 ### vue父子组件的生命周期调用顺序
 
-> [!NOTE]
+> [!NOTE|style:flat]
 > 初始化组件时  
 > created(父) -> created(子) -> mounted(子) -> mounted ->(父)
 
 
-> [!TIP]
+> [!TIP|style:flat]
 > 更新组件时  
 > beforeUpdate(父) -> beforeUpdate(子) -> updated(子) -> updated(父)
 
@@ -18,7 +18,7 @@
 ### vue组件更新之后获取最新DOM
 
 
-> [!TIP]
+> [!TIP|style:flat]
 > 通过this.$nexttick获取
 
 ### 动态组件
@@ -124,7 +124,8 @@ export default {
 
 ```
 
-> index.vue
+> index.vue  
+
 ```
 <template>
 <div>
@@ -148,9 +149,11 @@ export default {
 </script>
 ```
 
+> [!TIP|style:flat]
 - 优势
 > 逻辑复用
 
+> [!ATTENTION|style:flat]
 - 劣势
 > 变量来源不明确，不利于阅读  
 > 多个mixin可能命名重复  
