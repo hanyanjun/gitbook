@@ -5,21 +5,20 @@
 
 ### vue父子组件的生命周期调用顺序
 
-```javascript
-/**
- * 初始化组件时
- * */ 
-// created(父) -> created(子) -> mounted(子) -> mounted ->(父)
+> [!NOTE]
+> 初始化组件时  
+> created(父) -> created(子) -> mounted(子) -> mounted ->(父)
 
-/**
- * 更新组件时
- * */ 
-// beforeUpdate(父) -> beforeUpdate(子) -> updated(子) -> updated(父)
 
-```
+> [!TIP]
+> 更新组件时  
+> beforeUpdate(父) -> beforeUpdate(子) -> updated(子) -> updated(父)
+
 
 ### vue组件更新之后获取最新DOM
 
+
+> [!TIP]
 > 通过this.$nexttick获取
 
 ### 动态组件
@@ -161,4 +160,29 @@ export default {
 
 
 
-## 2.vue-router
+## vue-router
+
+### 路由模式
+- hash
+
+- history
+
+### 路由配置
+- 动态路由
+
+```javascript
+routes : [
+    {path : 'user/:id' , component : User}
+]
+```
+- 路由懒加载
+
+```javascript
+routes : [
+    {path : 'user/:id' , component : ()=> import("../../user.vue")}
+]
+```
+
+
+## diff算法相关
+

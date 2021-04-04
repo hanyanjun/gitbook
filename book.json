@@ -7,7 +7,9 @@
          "copy-code-button",
          "expandable-chapters-small",
          "github-buttons",
-         "simple-page-toc"
+         "simple-page-toc",
+         "anchor-navigation-ex",
+         "flexible-alerts"
     ],
     "pluginsConfig" : {
         "simple-page-toc": {
