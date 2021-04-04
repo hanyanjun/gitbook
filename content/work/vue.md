@@ -45,6 +45,7 @@ export default {
 ```
 <template>
 <Com v-if={showCom}/>
+<button  @click={changeCom}/>
 </template>
 
 <script>
@@ -64,7 +65,7 @@ export default {
 </script>
 ```
 
-## vue如何缓存组件
+## 1.5vue如何缓存组件
 
 
 

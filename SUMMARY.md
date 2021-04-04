@@ -11,4 +11,4 @@
     * [css部分](content/work/css.md)
     * [原生js](content/work/javascript.md)
     * [http](content/work/http.md)
-    * [vue](content/word/vue.md)
+    * [vue](content/work/vue.md)
