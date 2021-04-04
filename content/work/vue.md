@@ -103,7 +103,7 @@ export default {
 
 ### mixin
 
-> mixin.js
+- mixin.js
 
 ```
 export default {
@@ -124,7 +124,7 @@ export default {
 
 ```
 
-> index.vue  
+- index.vue  
 
 ```
 <template>
