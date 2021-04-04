@@ -1,9 +1,9 @@
 `<!-- toc -->`
 
 
-## 1.vue使用知识点
+## vue使用知识点
 
-### 1.1vue父子组件的生命周期调用顺序
+### vue父子组件的生命周期调用顺序
 
 ```javascript
 /**
@@ -18,11 +18,11 @@
 
 ```
 
-### 1.2vue组件更新之后获取最新DOM
+### vue组件更新之后获取最新DOM
 
 > 通过this.$nexttick获取
 
-### 1.3动态组件
+### 动态组件
 ```
 <template>
 <component :is="baseCom"/>
@@ -41,7 +41,7 @@ export default {
 </script>
 ```
 
-### 1.4异步组件
+### 异步组件
 ```
 <template>
 <Com v-if={showCom}/>
@@ -65,7 +65,100 @@ export default {
 </script>
 ```
 
-## 1.5vue如何缓存组件
+### vue如何缓存组件
+
+> 如果无keep-alive 每次切换状态会触发组件的destoryed和mounted方法，而加上后组件被缓存，mounted只会触发一次，destoryed不会触发       
+> v-show 通过css 属性来进行组件缓存，keep-alive通过组件类缓存
+
+```
+<template>
+<button @click="changeStatus('a')" />
+<button @click="changeStatus('b')" />
+<button @click="changeStatus('c')" />
+<keep-alive>
+<A v-if="status === a"/>
+<B v-if="status === b"/>
+<C v-if="status === c"/>
+<keep-alive/>
+</template>
+
+<script>
+import A from "xxx"
+import B from "xxx"
+import C from "xxx"
+export default {
+    components : {
+        A,B,C
+    },
+    data(){
+        status : ''
+    },
+    methods : {
+        changeStatus(status){
+            this.data.status = status
+        }
+    }
+}
+</script>
+```
+
+### mixin
+
+> mixin.js
+
+```
+export default {
+    data(){
+        return {
+            city : '北京'
+        }
+    },
+    mounted(){
+        console.log('mixin mounted')
+    },
+    methods: {
+        showName(){
+            console.log(this.name)
+        }
+    }
+}
+
+```
+
+> index.vue
+```
+<template>
+<div>
+    <p>{{city}}</p>
+    <p>{{name}}</p> 
+    <button @click="showName" />
+</div>
+</template>
+
+<script>
+import Mixin from "xxx"
+export default {
+    mixins : [Mixin]
+    data(){
+        name : 'index'
+    },
+    methods : {
+
+    }
+}
+</script>
+```
+
+- 优势
+> 逻辑复用
+
+- 劣势
+> 变量来源不明确，不利于阅读  
+> 多个mixin可能命名重复  
+> 复杂度高，可能出现一对多，多对一，多对多关系
 
 
 
+
+
+## 2.vue-router
