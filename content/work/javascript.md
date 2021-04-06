@@ -42,6 +42,7 @@
 - 保存遍历的对象，遍历时若对象被保存，则直接返回    
 
 - JSON.parse、JSON.stringify
+
 > [!DANGER|style:flat]
 > 会对部分对象属性过滤     
 
@@ -100,8 +101,11 @@ function cloneLoop(x) {
 
     return root;
 }
-```
-- 采用循环&缓存对象
+```   
+
+
+- 采用循环&缓存对象  
+
 ```javascript
 // 保持引用关系
 function cloneForce(x) {
@@ -177,11 +181,14 @@ function find(arr, item) {
 
     return null;
 }
-```
+```  
 
-## 内存泄漏 栈溢出
+
+## 内存泄漏 栈溢出  
+
 - 内存泄漏
-> 垃圾回收机制无法回收变量，导致内存逐渐积累到达瓶颈即为内存溢出或者内存泄漏    
+> 垃圾回收机制无法回收变量，导致内存逐渐积累到达瓶颈即为内存溢出或者内存泄漏       
+
 > [!NOTE|style:flat]
 > 常见内存泄漏
 - 全局变量过多
@@ -189,10 +196,12 @@ function find(arr, item) {
 - dom添加属性或者方法不及时解除引用
 
 - 栈溢出
-> 入栈太多，出栈太慢，栈内存被占满
+> 入栈太多，出栈太慢，栈内存被占满   
+
 > [!NOTE|style:flat]
 > 常见栈溢出
-- 递归导致变量无法释放，下次的递归依赖上次的栈中变量
+- 递归导致变量无法释放，下次的递归依赖上次的栈中变量      
+
 
 ```javascript
 function isEven (num) {
