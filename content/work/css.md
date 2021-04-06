@@ -17,10 +17,8 @@
 ## 什么是margin重叠
 
 > [!TIP|style:flat]
-> 相邻元素margin 重叠 ， 父子元素margin 重叠；
-
-
-
+> 相邻元素margin 重叠 ， 父子元素margin 重叠；   
+ 
 > [!DANGER|style:flat]
 ```javascript
 如果都是正边界，结果的边界宽度是相邻边界宽度中最大的值
