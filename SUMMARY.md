@@ -2,8 +2,7 @@
 
 * [Introduction](README.md)
 
-* [帮助](content/help/readme.md)
-    * [gitbook配置](content/help/configHelp.md)
+* [gitbook使用](content/help/readme.md)
     * [gitbook插件](content/help/plugins.md)
 
 * [面试知识总结](content/work/readme.md)
@@ -14,3 +13,4 @@
     * [vue](content/work/vue.md)
     * [vue原理](content/work/vue原理.md)
     * [测试](content/work/测试.md)
+    * [算法](content/work/算法.md)
