@@ -24,7 +24,7 @@
 - mounted
 > 调用render生成vNode, 数据订阅,path生成dom
 
- - [参考](https://ustbhuangyi.github.io/vue-analysis/v2/components/lifecycle.html)
+- [参考](https://ustbhuangyi.github.io/vue-analysis/v2/components/lifecycle.html)
 ### vue组件更新之后获取最新DOM
 
 
@@ -165,8 +165,9 @@ export default {
 ```
 
 - 优势   
+
 > [!NOTE|style:flat]
-- 逻辑复用
+- 逻辑复用    
 
 ---
 

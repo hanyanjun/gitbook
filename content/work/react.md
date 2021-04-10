@@ -49,7 +49,16 @@ console.log(this.state.count) //异步
 ```   
 
 同步
-- settimeout 中
+
+- settimeout 中   
+```javascript
+setTimeout(()=>{
+this.setState({
+    state : this.state.count + 1
+})
+console.log(this.state.count) //可以获取到最新值
+},0) 
+```    
 - 自己定义的事件函数中     
 ```javascript
 setTimeout(()=>{
@@ -79,7 +88,7 @@ this.setState({
     state : this.state.count + 1
 })
 ```   
-![NOTICE]
+![NOTE]
 > 会合并只会加1次，因为相加之前拿到的都是同一次值，类似于 Object.assign({count : 1},{count: 1},{count : 1})    
 
 
@@ -96,7 +105,7 @@ this.setState((preState)=>{
     return {count : preState.count + 1}
 })
 ```   
-![NOTICE]
+![NOTE]
 > 不会被合并，会相加三次   
 
 
@@ -111,6 +120,14 @@ this.setState((preState)=>{
  - event.nativeEvent
 > event.nativeEvent.target 是触发事件元素   
 > event.nativeEvent.current.target 是绑定事件的元素     
+
+
+### 组件生命周期
+
+![生命周期1](../../assets/react/lifecycle.png)
+![生命周期2](../../assets/react/lifecycle1.png)
+
+
 
 ## HOC组件
 
@@ -133,3 +150,4 @@ this.setState((preState)=>{
 
 - [React高阶组件(HOC)的入门📖及实践](https://juejin.cn/post/6844904050236850184)
 - [详解React生命周期(包括react16最新版)](https://www.jianshu.com/p/514fe21b9914)
+- [生命周期图](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
