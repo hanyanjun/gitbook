@@ -83,7 +83,7 @@ this.setState({
     state : this.state.count + 1
 })
 ```   
-> [!NOTE|style:flat]
+> [!NOTE]
 > 会合并只会加1次，因为相加之前拿到的都是同一次值，类似于 Object.assign({count : 1},{count: 1},{count : 1})    
 
 
@@ -100,21 +100,21 @@ this.setState((preState)=>{
     return {count : preState.count + 1}
 })
 ```   
-> [!NOTE|style:flat]
+> [!NOTE]
 > 不会被合并，会相加三次   
-
 
 ### React事件和DOM事件
 
-![DANGER|style:flat]    
-> - event 是 React 封装的 。 _proto_.constructor 是 SyntheticEvent  
-> - SyntheticEvent 模拟出来 DOM 事件所有能力     
-> - event事件都会挂在到 document 上    
 
 获取原生对象的方法
- - event.nativeEvent
+- event.nativeEvent
 > event.nativeEvent.target 是触发事件元素   
-> event.nativeEvent.current.target 是绑定事件的元素     
+> event.nativeEvent.current.target 是绑定事件的元素      
+
+> [!DANGER|style:flat]
+> - event 是 React 封装的 。 _proto_.constructor 是 SyntheticEvent  
+> - SyntheticEvent 模拟出来 DOM 事件所有能力     
+> - event事件都会挂在到 document 上     
 
 
 ### 组件生命周期
