@@ -1,5 +1,12 @@
 ## 组件化和MVVM
 
+
+## vue 生命周期
+
+- 大致划分
+> 挂载阶段、更新阶段、销毁阶段
+
+
 ## 响应式原理
 
 
@@ -17,7 +24,6 @@
 
 
 ## vnode 和 diff 算法
-
 ## 模板编译
 
 ## 组件渲染过程
@@ -25,9 +31,16 @@
 ![渲染1](../../assets/vue/渲染1.jpg)
 ![渲染2](../../assets/vue/渲染2.jpg)
 
-
+ 
 
 ## 前端路由
+
+> 对路由状态对象进行定义后，然后进行数据劫持，当路由状态发生变更触发render更新components，再进行跳转时：会存储上个路由对象的beforeEach，beforeleave、和下个路由对象的beforeEnter、afterEnter进入任务队列中，依次执行，执行完毕进入跳转    
+
+
+> [!TIP|style:flat]
+- 核心是：发布订阅模式的router状态的监听；任务队列模式对router守卫功能的触发   
+
 
 - hash 模式(hashChange)
 

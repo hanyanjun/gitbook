@@ -14,6 +14,17 @@
 > beforeUpdate(父) -> beforeUpdate(子) -> updated(子) -> updated(父)
 
 
+### vue 生命周期对应事情
+- beforeCreated
+> 初始化 events、lifecycle 等
+- created
+> init props、data、watcher、methods、computed 数据监听，dep添加
+- beforeMounted
+> complie 生成 render 函数
+- mounted
+> 调用render生成vNode, 数据订阅,path生成dom
+
+ - [参考](https://ustbhuangyi.github.io/vue-analysis/v2/components/lifecycle.html)
 ### vue组件更新之后获取最新DOM
 
 
@@ -167,6 +178,34 @@ export default {
 
 
 
+## v-for 和 v-if 优先级  
+
+```html
+<ul>
+  <li
+    v-for="user in users"
+    v-if="user.isActive"
+    :key="user.id"
+  >
+    {{ user.name }}
+  </li>
+</ul>
+
+```
+经过计算后：   
+
+```javascript
+this.users.map(function (user) {
+  if (user.isActive) {
+    return user.name
+  }
+})
+
+```
+
+> [!TIP|style:flat]
+> v-for 优先级大于 v-if,应该通过计算属性获取符合条件的list，效率更高    
+
 
 
 ## vue-router
@@ -174,7 +213,60 @@ export default {
 ### 路由模式
 - hash
 
+特点
+
+- hash 变化不会触发网页跳转，即浏览器的前进、后退
+- hash 变化不会刷新页面，SPA必须的特点
+- hash 永远不刽提交到serve端（前端控制，自生自灭）
+
+```javascript
+
+/**
+ * hash变化包括
+ * 1. js 修改url
+ * 2. 手动修改 url 的 hash
+ * 3. 浏览器前进后退
+ * */ 
+window.onhashchange = (event) => {
+    console.log('old url' , event.oldURL)
+    console.log('new url' , event.newURL)
+
+    console.log('hash:',location.hash)
+}
+
+// 页面初次加载获取hash
+document.addEventListener('DOMContentLoaded',()=>{
+    console.log('hash:',location.hash)
+})
+
+
+```
+
 - history
+
+核心api
+- history.pushState
+- window.onpopstate
+
+```javascript
+
+// 监听浏览器前进后退
+window.onpopstate = (event) => { 
+    console.log('onpopstate' , event.state,location.pathname)
+}
+
+// 页面初次加载获取hash
+document.addEventListener('DOMContentLoaded',()=>{
+    console.log('hash:',location.pathname)
+})
+
+document.getElementById('btn').addEventListenter('click',()=>{
+    const state = {name : 'page1'}
+    history.pushState(state, '' , 'page1');
+})
+
+```
+
 
 ### 路由配置
 - 动态路由
