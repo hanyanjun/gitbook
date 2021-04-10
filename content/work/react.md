@@ -1,10 +1,5 @@
 
 
-
-
-
-
-
 ## react class 组件使用
 
 ### super函数
@@ -38,7 +33,7 @@ this.setState({
 
 - 可能是异步更新
 
-异步  
+##### 异步场景
 ```javascript
 this.setState({
     state : this.state.count + 1
@@ -48,7 +43,7 @@ this.setState({
 console.log(this.state.count) //异步
 ```   
 
-同步
+##### 同步场景
 
 - settimeout 中   
 ```javascript
@@ -75,7 +70,7 @@ console.log(this.state.count) //可以获取到最新值
 })
 ```  
 
-- 可能会被合并   
+#### 可能会被合并   
 
 ```javascript
 this.setState({
@@ -88,7 +83,7 @@ this.setState({
     state : this.state.count + 1
 })
 ```   
-![NOTE]
+> [!NOTE|style:flat]
 > 会合并只会加1次，因为相加之前拿到的都是同一次值，类似于 Object.assign({count : 1},{count: 1},{count : 1})    
 
 
@@ -105,7 +100,7 @@ this.setState((preState)=>{
     return {count : preState.count + 1}
 })
 ```   
-![NOTE]
+> [!NOTE|style:flat]
 > 不会被合并，会相加三次   
 
 
@@ -128,7 +123,9 @@ this.setState((preState)=>{
 ![生命周期2](../../assets/react/lifecycle1.png)
 
 
+## react 函数组件
 
+## react 类组件、函数组件对比
 ## HOC组件
 
 应用场景
@@ -139,7 +136,6 @@ this.setState((preState)=>{
 实现方式
 - 属性代理 
 - 反向继承
-
 
 
 
