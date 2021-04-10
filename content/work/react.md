@@ -133,7 +133,7 @@ this.setState((preState)=>{
 - 高阶组件 HOC
 - Render Props
 
-### 函数组件对比
+### 函数组件与类组件对比
 
 - 纯函数，输入props，输出jsx
 - 没有实例，没有生命周期，无state
@@ -212,10 +212,13 @@ shouldComponentUpdate(nextProps,nextState){
 ```   
 
 > [!DANGER]
-- SCU 默认返回 true   
+- SCU 默认返回 true     
+
+--- 
 ###### PureComponent
 > [!NOTE]
-- PureComponent,SCU 中实现了浅比较    
+- PureComponent,SCU 中实现了浅比较   
+  
 ```javascript
 class t extends React.PureComponent
 ```   
@@ -274,8 +277,8 @@ const store = crateStore(rootReducer , applyMiddleware(thunk));
 
 ### redux 中间件
 
-![redux流程图](../../assets/react/redux-thunk.jep)
-![redux流程图](../../assets/react/redux.jep)
+![redux流程图](../../assets/react/redux-thunk.jpg)
+![redux流程图](../../assets/react/redux.jpg)
 
 
 ## 参考文章
