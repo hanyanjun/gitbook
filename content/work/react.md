@@ -114,7 +114,14 @@ this.setState((preState)=>{
 > [!DANGER|style:flat]
 > - event 是 React 封装的 。 _proto_.constructor 是 SyntheticEvent  
 > - SyntheticEvent 模拟出来 DOM 事件所有能力     
-> - event事件都会挂在到 document 上     
+> - event事件都会挂在到 document 上      
+
+为何要合成事件机制？
+- 更好的兼容性和跨平台
+- 挂载到 document ， 减少内存消耗， 避免频繁解绑
+- 方便事件的统一管理（如事务机制）   
+
+![事件合成](../../assets/react/事件合成.jpg)   
 
 
 ### 组件生命周期
@@ -281,6 +288,9 @@ const store = crateStore(rootReducer , applyMiddleware(thunk));
 ![redux流程图](../../assets/react/redux.jpg)
 
 
+## 函数式编程
+- 纯函数
+- 不可变值
 ## 参考文章
 
 - [React高阶组件(HOC)的入门及实践](https://juejin.cn/post/6844904050236850184)
