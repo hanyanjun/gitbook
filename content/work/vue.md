@@ -4,14 +4,10 @@
 ### vue父子组件的生命周期调用顺序
 
 > [!NOTE|style:flat]
-> 初始化组件时  
-> created(父) -> created(子) -> mounted(子) -> mounted ->(父)   
-
----
-
-> [!DANGER|style:flat]
-> 更新组件时  
-> beforeUpdate(父) -> beforeUpdate(子) -> updated(子) -> updated(父)
+- 加载渲染过程 父beforeCreate->父created->父beforeMount->子beforeCreate->子created->子beforeMount->子mounted->父mounted
+- 子组件更新过程 父beforeUpdate->子beforeUpdate->子updated->父updated
+- 父组件更新过程 父beforeUpdate->父updated
+- 销毁过程 父beforeDestroy->子beforeDestroy->子destroyed->父destroyed    
 
 
 ### vue 生命周期对应事情
@@ -176,6 +172,18 @@ export default {
 > - 多个mixin可能命名重复  
 > - 复杂度高，可能出现一对多，多对一，多对多关系
 
+
+## compute、watch区别
+
+computed：计算属性
+
+计算属性是由data中的已知值，得到的一个新值。 这个新值只会根据已知值的变化而变化，其他不相关的数据的变化不会影响该新值。 计算属性不在data中，计算属性新值的相关已知值在data中。 别人变化影响我自己。 watch：监听数据的变化
+
+监听data中数据的变化 监听的数据就是data中的已知值 我的变化影响别人
+
+1.watch擅长处理的场景：一个数据影响多个数据
+
+2.computed擅长处理的场景：一个数据受多个数据影响
 
 
 ## v-for 和 v-if 优先级  

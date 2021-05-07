@@ -41,3 +41,5 @@ h1、h2、h3、h4、h5、h6、p、dt
 
 > [!TIP|style:flat]
 > text 、 password 、 submit 、 radio 、 checkbox 、button 、 number 、 date 、 color 、 range 、 month 、 week 、time 、 datetime 、datetime-local 、email 、search 、 te 、 url
+
+
