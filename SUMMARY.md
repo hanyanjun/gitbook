@@ -17,4 +17,8 @@
     * [react使用](content/work/react.md)
     * [react原理](content/work/react原理.md)
 
+* [前端架构](content/cli/readme.md)
+    * [readme](content/cli/readme.md)
+    * [快速入门-简易脚手架](content/cli/fast.md)
+
 * [Node相关](content/node/readme.md)
