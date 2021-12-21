@@ -3,10 +3,12 @@
 - 创建 npm 项目
 
 - 创建脚手架入口文件，最上方添加
+
 ```javascript
 #!/usr/bin/env node
 ```
 - 配置 package.json ， 添加bin 属性
+
 ```javascript
   "bin": {
     "fef": "bin/index.js"
@@ -62,11 +64,13 @@ npm install -g  [脚手架名]
 ##### 教授级本地link标准流程
 
 - 链接本地脚手架
+
 ```javascript
 cd [脚手架目录]
 npm link
 ```
 - 链接本地库文件
+
 ```javascript
 cd [库文件目录]
 npm link
@@ -85,9 +89,7 @@ npm unlink
 
 
 > [!TIP|style:flat]
-如果无法使用unlink 请使用： `npm rm -g [包名]` 强制解除全局软链  
-
-
+> 如果无法使用unlink 请使用： `npm rm -g [包名]` 强制解除全局软链    
 
 > [!TIP|style:flat]
 > npm link [包名] ： 将当前项目中 node_modules 下指定的库文件链接到 node 全局 node_modules 下的库文件；  
