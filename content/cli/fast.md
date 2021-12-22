@@ -90,7 +90,7 @@ npm unlink
 
 > [!TIP|style:flat]
 > 如果无法使用unlink 请使用： `npm rm -g [包名]` 强制解除全局软链    
-
+   
 > [!TIP|style:flat]
 > npm link [包名] ： 将当前项目中 node_modules 下指定的库文件链接到 node 全局 node_modules 下的库文件；  
 > 可使用 `npm ls -g --depth 0 ` 查看全局包列表；
