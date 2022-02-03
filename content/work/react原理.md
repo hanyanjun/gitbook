@@ -7,7 +7,7 @@
 - React 中注册的事件（和它调用的函数）
 - React 可以 '管理' 的入口
 
-哪些不能明智 batchUpdate 机制
+哪些不能命中 batchUpdate 机制
 - setTimeout setInterval 等 （和它调用的函数）
 - 自定义的DOM事件（和它调用的函数）
 - React "管不到" 的入口
