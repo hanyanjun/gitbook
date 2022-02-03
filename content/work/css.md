@@ -30,7 +30,8 @@
 > flex : inital  => 0 1 auto ; auto => 1 1 auto ; none => 0 0 auto;  
 > flex : 1  => 1 1 auto; => flex-grow flex-shrink flex-basis;   
 
-## 圣杯布局 双飞翼布局
+## 圣杯布局 双飞翼布局   
+
 
 
 > [!TIP|style:flat]
@@ -53,7 +54,20 @@
 
 ## 元素竖向的百分比设定是相对于容器的高度吗？
 > 如果是height的话，是相对于包含块的高度。
-> 如果是padding或者margin竖直方向的属性则是相对于包含块的宽度。
+> 如果是padding或者margin竖直方向的属性则是相对于包含块的宽度。  
+
+
+## BFC 
+- 概念  
+> 格式化上下文, 它是页面中的一块渲染区域,并且有一套渲染规则,它决定了其子元素将如何定位,以及和其他元素的关系和相互渲染作用  
+> BFC 即 Block Formatting Contexts (块级格式化上下文)，它属于上述定位方案的普通流。  
+
+- 触发BFC   
+> 根元素(<html>) 
+> 浮动元素（元素的 float 不是 none）  
+> 绝对定位元素（元素的 position 为 absolute 或 fixed） 
+> 行内块元素（元素的 display 为 inline-block） 
+> overflow 值不为 visible 的块元素  
 
 
 ## 渲染过程
@@ -73,8 +87,8 @@
 
 
 ## 参考文章
-- [掘金](https://juejin.cn/post/6844904117819850765)
-- [腾讯云](https://cloud.tencent.com/developer/article/1608771)
-- [Flex 布局教程：语法篇](https://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
-
+- [CSS知识点整理](https://juejin.cn/post/6844904117819850765)
+- [104道CSS面试题](https://cloud.tencent.com/developer/article/1608771)
+- [Flex布局教程：语法篇](https://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
+- [圣杯布局和双飞翼布局](https://www.jianshu.com/p/81ef7e7094e8)
 
