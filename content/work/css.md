@@ -27,8 +27,8 @@
 > 如果没有正边界，则从零中减去绝对值最大的负边界  
 
 ## flex
-> flex : inital  => 0 1 auto ; auto => 1 1 auto ; none => 0 0 auto;
-> flex : 1  => 1 1 auto;
+> flex : inital  => 0 1 auto ; auto => 1 1 auto ; none => 0 0 auto;  
+> flex : 1  => 1 1 auto; => flex-grow flex-shrink flex-basis;   
 
 ## 圣杯布局 双飞翼布局
 
@@ -75,5 +75,6 @@
 ## 参考文章
 - [掘金](https://juejin.cn/post/6844904117819850765)
 - [腾讯云](https://cloud.tencent.com/developer/article/1608771)
+- [Flex 布局教程：语法篇](https://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
 
 
