@@ -91,4 +91,4 @@
 - [104道CSS面试题](https://cloud.tencent.com/developer/article/1608771)
 - [Flex布局教程：语法篇](https://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
 - [圣杯布局和双飞翼布局](https://www.jianshu.com/p/81ef7e7094e8)
-
+- [浅析浏览器渲染原理](https://segmentfault.com/a/1190000012960187)
