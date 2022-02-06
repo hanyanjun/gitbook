@@ -30,11 +30,13 @@
 
 ### URI URL URN  
 - URI  
-> 统一资源标识符，用来唯一标识互联网上的信息资源，包括URL、URN；  
+> 统一资源标识符，用来唯一标识互联网上的信息资源，包括URL、URN。  
 
 - URL 
-> 统一资源定位器，
+> 统一资源定位器。  
 
+- URN 
+> 永久统一资源定位符   
 
 
 ### http状态码
@@ -52,8 +54,11 @@
 - http/1.0 每次请求需要重新建立连接
 - http/1.1 长连接，但是会服务端队头阻塞
 - http/2.0 解决了队头阻塞，但是会发生丢包重传
-- http/3.0 基于tcp的udp改良的QUIC连接；
+- http/3.0 基于tcp的udp改良的QUIC连接；  
 
+
+## 资源获取流程  
+![资源获取流程](../../assets/http/cache.jpg)  
 ## http缓存
 
 
@@ -69,12 +74,47 @@
 
 
 ![协商缓存](../../assets/http/协商缓存.jpg)
-![协商缓存可选值](../../assets/http/协商缓存值.jpg)
+![协商缓存可选值](../../assets/http/协商缓存值.jpg)  
 
 
 > [!DANGER|style:flat]
-> 如果使用了强制缓存，并且未达到过期时间，那么客户端不再和服务端发生交互，此间如果资源发生修改也不会重新获取，有效期内 返回状态码为 200 ， 如果达到过期时间再去服务端拿 服务端返回未过期 返回 304  从缓存中直接拿取；  
-> 如果使用了协商缓存，每次请求资源都会走服务器进行对比，如果资源未过期 返回状态码 304 ，如果资源已经过期返回最新资源且返回新的资源标识和时间；
+> 如果使用了强制缓存，并且未达到过期时间，那么客户端不再和服务端发生交互，此时是浏览器自身的缓存，此间如果资源发生修改也不会重新获取，有效期内 返回状态码为 200 （from memory）， 如果达到过期时间再去服务端拿 服务端返回未过期 返回 304  从缓存中直接拿取；  
+> 如果使用了协商缓存，每次请求资源都会走服务器进行对比，如果资源未过期 返回状态码 304 ，如果资源已经过期返回最新资源且返回新的资源标识和时间；    
+
+```javascript
+  if (request.url === '/script.js') {
+    const etag = request.headers['if-none-match']  //获取last-modified 对应的header
+    /**
+     * 服务端进行etag验证，如果etag为：777 那么返回状态码为：304，此时从浏览器中读取缓存数据
+     * 
+     * */ 
+    if (etag === '777') {
+      response.writeHead(304, {
+        'Content-Type': 'text/javascript',
+        'Cache-Control': 'max-age=2000000, no-cache',  
+        'Last-Modified': '123',
+        'Etag': '777'
+      })
+    /**
+     * 返回304时，此时end中的任何内容都不会返回，因为返回304状态码，那么就会从浏览器中读取缓存的上次的response.end内容
+     * */   
+      response.end()
+    } else {
+      response.writeHead(200, {
+        'Content-Type': 'text/javascript',
+        /**
+         * max-age 代表 2000000秒 内进行缓存，（如果是：'Cache-Control': 'max-age=2000000', 代表强制缓存；浏览器自身的缓存，如果* * max-age时间内服务端资源发生修改也不会重新获取。（200 from memory）刷新浏览器缓存解决方式：通过webpack对文件增加hash）
+         * no-cache 代表虽然进行缓存，但是都需要走服务端进行验证，
+         * */ 
+        'Cache-Control': 'max-age=2000000, no-cache', 
+        'Last-Modified': '123',
+        'Etag': '777'
+      })
+      response.end('console.log("script loaded twice")')
+    }
+  }
+}).listen(8888) 
+```
 
 ### 缓存优先级 
 > 强缓存优先级大于协商缓存
@@ -123,7 +163,12 @@
 
 
 ![流程1](../../assets/http/流程1.jpg)
-![流程2](../../assets/http/流程2.jpg)
+![流程2](../../assets/http/流程2.jpg)  
+
+### Cookie属性 
+- max-age和expires设置过期时间； 
+- Secure只再https的时候发送；  
+- HttpOnly无法通过document.cookie访问； 
 
 ## 本地缓存
 ![本地缓存]](../../assets/http/本地缓存.jpg)
@@ -141,7 +186,31 @@
 ###  CORS  
 > 该策略是浏览器的策略，不存在于服务端之间请求或者终端命令http请求当中，当一个请求从客户端发出的时候，  
 > 如果命中CORS策略并且后端未设置 Access-Control-Allow-Origin  时浏览器会将服务端的返回给屏蔽掉，  
-> 同时在控制台输出CORS的error，该行为是浏览器同源策略行为。   
+> 同时在控制台输出CORS的error，该行为是浏览器同源策略行为。     
+
+```javascript
+const http = require('http')
+http.createServer(function (request, response) {
+  console.log('request come', request.url)
+  response.writeHead(200, {
+    'Access-Control-Allow-Origin': 'http://127.0.0.1:8888',
+    /**
+     * 允许请求携带的headers的key，此时预请求可以通过。
+     * */ 
+    'Access-Control-Allow-Headers': 'X-Test-Cors',
+    /**
+     * 允许的预请求的method，此时预请求可以通过。
+     * */ 
+    'Access-Control-Allow-Methods': 'POST, PUT, DELETE',
+    /**
+     * 该请求方式下此时间范围（1000秒）不需要进行验证，即在该时间范围内所有符合条件的预请求都放过不需要进行验证，对应http在该时间范围内都没有* options的预请求。
+     * */ 
+    'Access-Control-Max-Age': '1000'
+  })
+  response.end('123')
+}).listen(8887)
+
+```
 
 ## 常见问题汇总
 
@@ -154,6 +223,10 @@
 - GET 方法就是安全且幂等的，因为它是「只读」操作，无论操作多少次，服务器上的数据都是安全的，且每次的结果都是相同的。
 - POST 因为是「新增或提交数据」的操作，会修改服务器上的资源，所以是不安全的，且多次提交数据就会创建多个资源，所以不是幂等的。
 
+
+## 工具类  
+- hotsadmin   
+> 可以将本地服务如：127.0.0.7 映射为 ： xxx.xxx.com，同时chrome可以支持该域名访问服务。
 ## 参考文章
 - [硬核！30 张图解 HTTP 常见的面试题](https://www.cnblogs.com/xiaolincoding/p/12442435.html)
 - [深入理解HTTP缓存机制及原理](https://juejin.cn/post/6844903801778864136)
