@@ -58,7 +58,7 @@
 
 
 ## 资源获取流程  
-![资源获取流程](../../assets/http/cache.jpg)  
+![资源获取流程](../../assets/http/cache.png)  
 ## http缓存
 
 
@@ -165,13 +165,13 @@
 ![流程1](../../assets/http/流程1.jpg)
 ![流程2](../../assets/http/流程2.jpg)  
 
-### Cookie属性 
-- max-age和expires设置过期时间； 
-- Secure只再https的时候发送；  
-- HttpOnly无法通过document.cookie访问； 
-
 ## 本地缓存
-![本地缓存]](../../assets/http/本地缓存.jpg)
+![本地缓存]](../../assets/http/本地缓存.jpg)  
+
+- Cookie 
+> max-age和expires设置过期时间；  
+> Secure只再https的时候发送；  
+> HttpOnly无法通过document.cookie访问； 
 
 
 ## 网络安全
