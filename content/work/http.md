@@ -44,10 +44,36 @@
 
 > [!NOTE|style:flat]
 > 3xx 类状态码表示客户端请求的资源发送了变动，需要客户端用新的 URL 重新发送请求获取资源，也就是重定向。    
-> 「301 Moved Permanently」表示永久重定向，说明请求的资源已经不存在了，需改用新的 URL 再次访问。  
-> 「302 Found」表示临时重定向，说明请求的资源还在，但暂时需要用另一个 URL 来访问。  
+> 「301 Moved Permanently」（status code : 302 Found (from disk cache)）表示永久重定向，说明请求的资源已经不存在了，需改用新的 URL 再次访问。  
+> 「302 Found」 （status code : 302 Found (from disk cache)）表示临时重定向，说明请求的资源还在，但暂时需要用另一个 URL 来访问。  
 > 301 和 302 都会在响应头里使用字段 Location，指明后续要跳转的 URL，浏览器会自动重定向新的 URL。   
-> 「304 Not Modified」不具有跳转的含义，表示资源未修改，重定向已存在的缓冲文件，也称缓存重定向，用于缓存控制。
+> 「304 Not Modified」不具有跳转的含义，表示资源未修改，重定向已存在的缓冲文件，也称缓存重定向，用于缓存控制。  
+
+```javascript
+http.createServer(function (request, response) {
+  console.log('request come', request.url)
+
+  if (request.url === '/') {
+    /**
+     * code 为 200时，不会重定向到/new 只有 302 301 状态码才会。
+     * code 为 302时，每次访问/都会经过服务端 然后进行重定向。
+     * code 为 301时，浏览器在访问/时不需要经过服务器而是直接定向到301，慎重使用，
+     * 因为使用301后，浏览器会将 / -> /new 缓存到浏览器端，哪怕服务端更改了其他code，
+     * 浏览器也无法感知，除非用户的浏览器重新清掉缓存。
+     * */ 
+    response.writeHead(302, {  // or 301
+      'Location': '/new'
+    })
+    response.end()
+  }
+  if (request.url === '/new') {
+    response.writeHead(200, {
+      'Content-Type': 'text/html',
+    })
+    response.end('<div>this is content</div>')
+  }
+}).listen(8888)
+```
 
 ### http发展 
 
@@ -91,7 +117,14 @@
     if (etag === '777') {
       response.writeHead(304, {
         'Content-Type': 'text/javascript',
-        'Cache-Control': 'max-age=2000000, no-cache',  
+        /***
+         * max-age=5 , s-maxage=20 在5秒内走的是浏览器缓存，在5-20秒内走的时候代理服务器缓存（如：其他用户访问相同链接
+         *  获取资源也很快，因为存在代理服务器缓存）；
+         * max-age=5 , s-maxage=20 , private 在5秒内走的是浏览器缓存，在大于5秒不走缓存
+         *   （private 只有浏览器才可以缓存，代理服务器不允许缓存）；
+         * max-age=5 , s-maxage=20 , no-store  都不走缓存 （no-store 浏览器，代理服务器都不缓存）
+         * */ 
+        'Cache-Control': 'max-age=2000000, no-cache',    
         'Last-Modified': '123',
         'Etag': '777'
       })
@@ -226,7 +259,8 @@ http.createServer(function (request, response) {
 
 ## 工具类  
 - hotsadmin   
-> 可以将本地服务如：127.0.0.7 映射为 ： xxx.xxx.com，同时chrome可以支持该域名访问服务。
+> 可以将本地服务如：127.0.0.7 映射为 ： xxx.xxx.com，同时chrome可以支持该域名访问服务。   
+
 ## 参考文章
 - [硬核！30 张图解 HTTP 常见的面试题](https://www.cnblogs.com/xiaolincoding/p/12442435.html)
 - [深入理解HTTP缓存机制及原理](https://juejin.cn/post/6844903801778864136)
