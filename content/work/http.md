@@ -79,7 +79,7 @@ http.createServer(function (request, response) {
 
 - http/1.0 每次请求需要重新建立连接
 - http/1.1 长连接，但是会服务端队头阻塞
-- http/2.0 解决了队头阻塞，但是会发生丢包重传
+- http/2.0 解决了队头阻塞，但是会发生丢包重传（信道复用，分帧传输，serve push）
 - http/3.0 基于tcp的udp改良的QUIC连接；  
 
 

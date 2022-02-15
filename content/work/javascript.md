@@ -3,7 +3,8 @@
 具备以下特点
 - 顺序执行
 - 条件
-- 循环
+- 循环  
+
 ## 模块化：amd、cmd
 > [!NOTE|style:flat]
 > amd require.js  依赖前置
