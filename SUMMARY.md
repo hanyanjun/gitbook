@@ -22,9 +22,14 @@
     * [快速入门-简易脚手架](content/cli/fast.md)
     * [lerna](content/cli/lerna.md)
 
-* [数据结构](content/suanfa/readme.md)
-   * [基本介绍](content/suanfa/intro.md)
-   * [栈](content/suanfa/zhan.md)
+* [数据结构和算法](content/suanfa/readme.md)
+   * [数据结构之基本介绍](content/suanfa/intro.md)
+   * [数据结构之栈](content/suanfa/zhan.md)
+   * [数据结构之队列](content/suanfa/duilie.md)
+   * [数据结构之链表](content/suanfa/lianbiao.md)
+   * [数据结构之集合](content/suanfa/jihe.md)
+   * [数据结构之字典](content/suanfa/zidian.md)
+   * [数据结构之树](content/suanfa/shu.md)
 
 * [Node相关](content/node/readme.md)
 
