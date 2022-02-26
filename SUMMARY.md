@@ -32,6 +32,11 @@
    * [数据结构之树](content/suanfa/shu.md)
    * [数据结构之图](content/suanfa/tu.md)
    * [数据结构之堆](content/suanfa/dui.md)
+   * [算法之"搜索算法"](content/suanfa/suanfa-sousuo.md)
+   * [算法设计思想之"分而治之"](content/suanfa/suanfa-fenzhi.md)
+   * [算法设计思想之"动态规划"](content/suanfa/suanfa-guihua.md)
+   * [算法设计思想之"贪心算法"](content/suanfa/suanfa-tanxin.md)
+   * [算法设计思想之"回溯算法"](content/suanfa/suanfa-huisu.md)
 
 * [Node相关](content/node/readme.md)
 
