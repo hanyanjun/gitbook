@@ -35,20 +35,34 @@
 - 删除堆顶  
 > 用数组尾部元素替换堆顶（直接删除堆顶会破坏堆结构）；  
 > 然后下移：将新堆顶和它的子节点进行交换，直到子节点大于等于这个新堆顶；  
-> 大小为k的堆中删除堆顶的时间复杂度为`O(logK)`； 
+> 大小为k的堆中删除堆顶的时间复杂度为`O(logK)`；  
+
+- 获取堆顶和堆的大小 
+> 获取堆顶：返回数组的头部； 
+> 获取堆的大小：返回数组的长度； 
 
 ```javascript
 class MinHeap {
     constructor(){
         this.heap = []
     }
+    // 插入堆
     insert(val){
         this.heap.push(val);
         this.shiftUp(this.heap.length - 1);
     }
+    // 删除堆顶
     pop(){
         this.head[0] = this.head.pop();
         this.shiftDown(0)
+    }
+    // 获取堆顶
+    peek(){
+        return this.heap[0]
+    }
+    // 获取堆大小
+    size(){
+        return this.heap.length
     }
     getParentIndex(index){
         // Math.floor((index -1 )/2)
