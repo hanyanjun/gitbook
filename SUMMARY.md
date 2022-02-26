@@ -30,6 +30,8 @@
    * [数据结构之集合](content/suanfa/jihe.md)
    * [数据结构之字典](content/suanfa/zidian.md)
    * [数据结构之树](content/suanfa/shu.md)
+   * [数据结构之图](content/suanfa/tu.md)
+   * [数据结构之堆](content/suanfa/dui.md)
 
 * [Node相关](content/node/readme.md)
 
