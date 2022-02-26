@@ -1,6 +1,8 @@
 ## 栈 
 - 概念    
-> 一个后进先出的数据结构；javascript 中没有栈，但可以用 Array 实现栈的所有功能；    
+
+> 一个后进先出的数据结构；javascript 中没有栈，但可以用 Array 实现栈的所有功能；  
+  
 ![url](../../assets/suanfa/zhan.png)     
 
 
