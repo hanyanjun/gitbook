@@ -36,4 +36,4 @@ branches:
 
 env:
   global:
-    - REF=github.com/hanyanjun/gitbook.git # 设置 github 地址 token : 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
+    - REF=github.com/hanyanjun/gitbook.git # 设置 github 
