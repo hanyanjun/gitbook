@@ -1,0 +1,1004 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>react使用 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="react原理.html" />
+    
+    
+    <link rel="prev" href="vue原理.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"hanyanjun","repo":"gitbook","type":"star","size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../help/readme.html">
+            
+                <a href="../help/readme.html">
+            
+                    
+                    gitbook使用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../help/plugins.html">
+            
+                <a href="../help/plugins.html">
+            
+                    
+                    gitbook插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="readme.html">
+            
+                <a href="readme.html">
+            
+                    
+                    面试知识总结
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="html.html">
+            
+                <a href="html.html">
+            
+                    
+                    html部分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="css.html">
+            
+                <a href="css.html">
+            
+                    
+                    css部分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="javascript.html">
+            
+                <a href="javascript.html">
+            
+                    
+                    原生js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="http.html">
+            
+                <a href="http.html">
+            
+                    
+                    http
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="测试.html">
+            
+                <a href="测试.html">
+            
+                    
+                    测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="算法.html">
+            
+                <a href="算法.html">
+            
+                    
+                    算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="vue.html">
+            
+                <a href="vue.html">
+            
+                    
+                    vue使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="vue原理.html">
+            
+                <a href="vue原理.html">
+            
+                    
+                    vue原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.9" data-path="react.html">
+            
+                <a href="react.html">
+            
+                    
+                    react使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="react原理.html">
+            
+                <a href="react原理.html">
+            
+                    
+                    react原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../cli/readme.html">
+            
+                <a href="../cli/readme.html">
+            
+                    
+                    前端架构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../cli/readme.html">
+            
+                <a href="../cli/readme.html">
+            
+                    
+                    readme
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../cli/fast.html">
+            
+                <a href="../cli/fast.html">
+            
+                    
+                    快速入门-简易脚手架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../cli/lerna.html">
+            
+                <a href="../cli/lerna.html">
+            
+                    
+                    lerna
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../suanfa/readme.html">
+            
+                <a href="../suanfa/readme.html">
+            
+                    
+                    数据结构和算法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../suanfa/intro.html">
+            
+                <a href="../suanfa/intro.html">
+            
+                    
+                    数据结构之基本介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../suanfa/zhan.html">
+            
+                <a href="../suanfa/zhan.html">
+            
+                    
+                    数据结构之栈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../suanfa/duilie.html">
+            
+                <a href="../suanfa/duilie.html">
+            
+                    
+                    数据结构之队列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../suanfa/lianbiao.html">
+            
+                <a href="../suanfa/lianbiao.html">
+            
+                    
+                    数据结构之链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../suanfa/jihe.html">
+            
+                <a href="../suanfa/jihe.html">
+            
+                    
+                    数据结构之集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../suanfa/zidian.html">
+            
+                <a href="../suanfa/zidian.html">
+            
+                    
+                    数据结构之字典
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../suanfa/shu.html">
+            
+                <a href="../suanfa/shu.html">
+            
+                    
+                    数据结构之树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../suanfa/tu.html">
+            
+                <a href="../suanfa/tu.html">
+            
+                    
+                    数据结构之图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../suanfa/dui.html">
+            
+                <a href="../suanfa/dui.html">
+            
+                    
+                    数据结构之堆
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../suanfa/suanfa-sousuo.html">
+            
+                <a href="../suanfa/suanfa-sousuo.html">
+            
+                    
+                    算法之"搜索算法"
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="../suanfa/suanfa-fenzhi.html">
+            
+                <a href="../suanfa/suanfa-fenzhi.html">
+            
+                    
+                    算法设计思想之"分而治之"
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="../suanfa/suanfa-guihua.html">
+            
+                <a href="../suanfa/suanfa-guihua.html">
+            
+                    
+                    算法设计思想之"动态规划"
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" data-path="../suanfa/suanfa-tanxin.html">
+            
+                <a href="../suanfa/suanfa-tanxin.html">
+            
+                    
+                    算法设计思想之"贪心算法"
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14" data-path="../suanfa/suanfa-huisu.html">
+            
+                <a href="../suanfa/suanfa-huisu.html">
+            
+                    
+                    算法设计思想之"回溯算法"
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../node/readme.html">
+            
+                <a href="../node/readme.html">
+            
+                    
+                    Node相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >react使用</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#react-class-&#x7EC4;&#x4EF6;"><b>1.1. </b>React Class &#x7EC4;&#x4EF6;</a></li><ul><li><span class="title-icon "></span><a href="#super&#x51FD;&#x6570;"><b>1.1.1. </b>super&#x51FD;&#x6570;</a></li><li><span class="title-icon "></span><a href="#&#x7ED1;&#x5B9A;this&#x65B9;&#x6CD5;"><b>1.1.2. </b>&#x7ED1;&#x5B9A;this&#x65B9;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x7236;&#x5B50;&#x901A;&#x8BAF;"><b>1.1.3. </b>&#x7236;&#x5B50;&#x901A;&#x8BAF;</a></li><li><span class="title-icon "></span><a href="#setstate"><b>1.1.4. </b>setState</a></li><li><span class="title-icon "></span><a href="#react&#x4E8B;&#x4EF6;&#x548C;dom&#x4E8B;&#x4EF6;"><b>1.1.5. </b>React&#x4E8B;&#x4EF6;&#x548C;DOM&#x4E8B;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#&#x7EC4;&#x4EF6;&#x751F;&#x547D;&#x5468;&#x671F;"><b>1.1.6. </b>&#x7EC4;&#x4EF6;&#x751F;&#x547D;&#x5468;&#x671F;</a></li></ul><li><span class="title-icon "></span><a href="#react-&#x9AD8;&#x7EA7;&#x7279;&#x6027;"><b>1.2. </b>React &#x9AD8;&#x7EA7;&#x7279;&#x6027;</a></li><ul><li><span class="title-icon "></span><a href="#&#x51FD;&#x6570;&#x7EC4;&#x4EF6;&#x4E0E;&#x7C7B;&#x7EC4;&#x4EF6;&#x5BF9;&#x6BD4;"><b>1.2.1. </b>&#x51FD;&#x6570;&#x7EC4;&#x4EF6;&#x4E0E;&#x7C7B;&#x7EC4;&#x4EF6;&#x5BF9;&#x6BD4;</a></li><li><span class="title-icon "></span><a href="#&#x975E;&#x53D7;&#x63A7;&#x7EC4;&#x4EF6;"><b>1.2.2. </b>&#x975E;&#x53D7;&#x63A7;&#x7EC4;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#portals"><b>1.2.3. </b>Portals</a></li><li><span class="title-icon "></span><a href="#context"><b>1.2.4. </b>context</a></li><li><span class="title-icon "></span><a href="#&#x5F02;&#x6B65;&#x7EC4;&#x4EF6;"><b>1.2.5. </b>&#x5F02;&#x6B65;&#x7EC4;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#&#x6027;&#x80FD;&#x4F18;&#x5316;"><b>1.2.6. </b>&#x6027;&#x80FD;&#x4F18;&#x5316;</a></li><li><span class="title-icon "></span><a href="#&#x9AD8;&#x9636;&#x7EC4;&#x4EF6;"><b>1.2.7. </b>&#x9AD8;&#x9636;&#x7EC4;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#render-props"><b>1.2.8. </b>Render Props</a></li></ul><li><span class="title-icon "></span><a href="#redux"><b>1.3. </b>Redux</a></li><ul><li><span class="title-icon "></span><a href="#&#x57FA;&#x672C;api"><b>1.3.1. </b>&#x57FA;&#x672C;api</a></li><li><span class="title-icon "></span><a href="#&#x7ED3;&#x5408;react&#x4F7F;&#x7528;-react-redux"><b>1.3.2. </b>&#x7ED3;&#x5408;react&#x4F7F;&#x7528; react-redux</a></li><li><span class="title-icon "></span><a href="#&#x5F02;&#x6B65;action"><b>1.3.3. </b>&#x5F02;&#x6B65;action</a></li><li><span class="title-icon "></span><a href="#redux-&#x4E2D;&#x95F4;&#x4EF6;"><b>1.3.4. </b>redux &#x4E2D;&#x95F4;&#x4EF6;</a></li></ul><li><span class="title-icon "></span><a href="#&#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;"><b>1.4. </b>&#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;</a></li><li><span class="title-icon "></span><a href="#&#x53C2;&#x8003;&#x6587;&#x7AE0;"><b>1.5. </b>&#x53C2;&#x8003;&#x6587;&#x7AE0;</a></li></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="react-class-&#x7EC4;&#x4EF6;"><a name="react-class-&#x7EC4;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#react-class-&#x7EC4;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. React Class &#x7EC4;&#x4EF6;</h2>
+<h3 id="super&#x51FD;&#x6570;"><a name="super&#x51FD;&#x6570;" class="anchor-navigation-ex-anchor" href="#super&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. super&#x51FD;&#x6570;</h3>
+<h3 id="&#x7ED1;&#x5B9A;this&#x65B9;&#x6CD5;"><a name="&#x7ED1;&#x5B9A;this&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x7ED1;&#x5B9A;this&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.2. &#x7ED1;&#x5B9A;this&#x65B9;&#x6CD5;</h3>
+<ul>
+<li>this.a = this.a.bind(this)</li>
+<li>xxx onClick={this.a.bind(this)}</li>
+<li>const a = ()=&gt; {}</li>
+</ul>
+<h3 id="&#x7236;&#x5B50;&#x901A;&#x8BAF;"><a name="&#x7236;&#x5B50;&#x901A;&#x8BAF;" class="anchor-navigation-ex-anchor" href="#&#x7236;&#x5B50;&#x901A;&#x8BAF;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.3. &#x7236;&#x5B50;&#x901A;&#x8BAF;</h3>
+<h3 id="setstate"><a name="setstate" class="anchor-navigation-ex-anchor" href="#setstate"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.4. setState</h3>
+<h4 id="&#x4E0D;&#x53EF;&#x53D8;&#x503C;"><a name="&#x4E0D;&#x53EF;&#x53D8;&#x503C;" class="anchor-navigation-ex-anchor" href="#&#x4E0D;&#x53EF;&#x53D8;&#x503C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E0D;&#x53EF;&#x53D8;&#x503C;</h4>
+<blockquote>
+<p>&#x4FEE;&#x6539;state &#x5FC5;&#x987B;&#x901A;&#x8FC7; this.setState &#x53BB;&#x505A;   </p>
+</blockquote>
+<p>&#x5982;&#x4E0B;&#x662F;&#x9519;&#x8BEF;&#x7684;&#xFF1A;   </p>
+<pre class="language-"><code class="lang-javascript"><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>count<span class="token operator">++</span><span class="token punctuation">;</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">count</span> <span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>count
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<h4 id="&#x540C;&#x6B65;-or-&#x5F02;&#x6B65;"><a name="&#x540C;&#x6B65;-or-&#x5F02;&#x6B65;" class="anchor-navigation-ex-anchor" href="#&#x540C;&#x6B65;-or-&#x5F02;&#x6B65;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x540C;&#x6B65; or &#x5F02;&#x6B65;</h4>
+<ul>
+<li>&#x53EF;&#x80FD;&#x662F;&#x5F02;&#x6B65;&#x66F4;&#x65B0;</li>
+</ul>
+<h5 id="&#x5F02;&#x6B65;&#x573A;&#x666F;"><a name="&#x5F02;&#x6B65;&#x573A;&#x666F;" class="anchor-navigation-ex-anchor" href="#&#x5F02;&#x6B65;&#x573A;&#x666F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5F02;&#x6B65;&#x573A;&#x666F;</h5>
+<pre class="language-"><code class="lang-javascript"><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">state</span> <span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>count <span class="token operator">+</span> <span class="token number">1</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>count<span class="token punctuation">)</span> <span class="token comment">//&#x62FF;&#x5230;&#x6700;&#x65B0;&#x503C;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>count<span class="token punctuation">)</span> <span class="token comment">//&#x5F02;&#x6B65;</span>
+</code></pre>
+<h5 id="&#x540C;&#x6B65;&#x573A;&#x666F;"><a name="&#x540C;&#x6B65;&#x573A;&#x666F;" class="anchor-navigation-ex-anchor" href="#&#x540C;&#x6B65;&#x573A;&#x666F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x540C;&#x6B65;&#x573A;&#x666F;</h5>
+<ul>
+<li>settimeout &#x4E2D;   <pre class="language-"><code class="lang-javascript"><span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">state</span> <span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>count <span class="token operator">+</span> <span class="token number">1</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>count<span class="token punctuation">)</span> <span class="token comment">//&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x5230;&#x6700;&#x65B0;&#x503C;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span>
+</code></pre>
+</li>
+<li>&#x81EA;&#x5DF1;&#x5B9A;&#x4E49;&#x7684;&#x4E8B;&#x4EF6;&#x51FD;&#x6570;&#x4E2D;     <pre class="language-"><code class="lang-javascript"><span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">state</span> <span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>count <span class="token operator">+</span> <span class="token number">1</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>count<span class="token punctuation">)</span> <span class="token comment">//&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x5230;&#x6700;&#x65B0;&#x503C;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span>
+document<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">&apos;click&apos;</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">state</span> <span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>count <span class="token operator">+</span> <span class="token number">1</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>count<span class="token punctuation">)</span> <span class="token comment">//&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x5230;&#x6700;&#x65B0;&#x503C;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+</li>
+</ul>
+<h4 id="&#x53EF;&#x80FD;&#x4F1A;&#x88AB;&#x5408;&#x5E76;"><a name="&#x53EF;&#x80FD;&#x4F1A;&#x88AB;&#x5408;&#x5E76;" class="anchor-navigation-ex-anchor" href="#&#x53EF;&#x80FD;&#x4F1A;&#x88AB;&#x5408;&#x5E76;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53EF;&#x80FD;&#x4F1A;&#x88AB;&#x5408;&#x5E76;</h4>
+<pre class="language-"><code class="lang-javascript"><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">state</span> <span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>count <span class="token operator">+</span> <span class="token number">1</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">state</span> <span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>count <span class="token operator">+</span> <span class="token number">1</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">state</span> <span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>count <span class="token operator">+</span> <span class="token number">1</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<blockquote>
+<p>[!NOTE]
+&#x4F1A;&#x5408;&#x5E76;&#x53EA;&#x4F1A;&#x52A0;1&#x6B21;&#xFF0C;&#x56E0;&#x4E3A;&#x76F8;&#x52A0;&#x4E4B;&#x524D;&#x62FF;&#x5230;&#x7684;&#x90FD;&#x662F;&#x540C;&#x4E00;&#x6B21;&#x503C;&#xFF0C;&#x7C7B;&#x4F3C;&#x4E8E; Object.assign({count : 1},{count: 1},{count : 1})    </p>
+</blockquote>
+<pre class="language-"><code class="lang-javascript"><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">preState</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token literal-property property">count</span> <span class="token operator">:</span> preState<span class="token punctuation">.</span>count <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">preState</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token literal-property property">count</span> <span class="token operator">:</span> preState<span class="token punctuation">.</span>count <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">preState</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token literal-property property">count</span> <span class="token operator">:</span> preState<span class="token punctuation">.</span>count <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<blockquote>
+<p>[!NOTE]
+&#x4E0D;&#x4F1A;&#x88AB;&#x5408;&#x5E76;&#xFF0C;&#x4F1A;&#x76F8;&#x52A0;&#x4E09;&#x6B21;   </p>
+</blockquote>
+<h3 id="react&#x4E8B;&#x4EF6;&#x548C;dom&#x4E8B;&#x4EF6;"><a name="react&#x4E8B;&#x4EF6;&#x548C;dom&#x4E8B;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#react&#x4E8B;&#x4EF6;&#x548C;dom&#x4E8B;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.5. React&#x4E8B;&#x4EF6;&#x548C;DOM&#x4E8B;&#x4EF6;</h3>
+<p>&#x83B7;&#x53D6;&#x539F;&#x751F;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;</p>
+<ul>
+<li>event.nativeEvent<blockquote>
+<p>event.nativeEvent.target &#x662F;&#x89E6;&#x53D1;&#x4E8B;&#x4EF6;&#x5143;&#x7D20;<br>event.nativeEvent.current.target &#x662F;&#x7ED1;&#x5B9A;&#x4E8B;&#x4EF6;&#x7684;&#x5143;&#x7D20;      </p>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<p>[!DANGER|style:flat]</p>
+<ul>
+<li>event &#x662F; React &#x5C01;&#x88C5;&#x7684; &#x3002; <em>proto</em>.constructor &#x662F; SyntheticEvent  </li>
+<li>SyntheticEvent &#x6A21;&#x62DF;&#x51FA;&#x6765; DOM &#x4E8B;&#x4EF6;&#x6240;&#x6709;&#x80FD;&#x529B;     </li>
+<li>event&#x4E8B;&#x4EF6;&#x90FD;&#x4F1A;&#x6302;&#x5728;&#x5230; document &#x4E0A;      </li>
+</ul>
+</blockquote>
+<p>&#x4E3A;&#x4F55;&#x8981;&#x5408;&#x6210;&#x4E8B;&#x4EF6;&#x673A;&#x5236;&#xFF1F;</p>
+<ul>
+<li>&#x66F4;&#x597D;&#x7684;&#x517C;&#x5BB9;&#x6027;&#x548C;&#x8DE8;&#x5E73;&#x53F0;</li>
+<li>&#x6302;&#x8F7D;&#x5230; document &#xFF0C; &#x51CF;&#x5C11;&#x5185;&#x5B58;&#x6D88;&#x8017;&#xFF0C; &#x907F;&#x514D;&#x9891;&#x7E41;&#x89E3;&#x7ED1;</li>
+<li>&#x65B9;&#x4FBF;&#x4E8B;&#x4EF6;&#x7684;&#x7EDF;&#x4E00;&#x7BA1;&#x7406;&#xFF08;&#x5982;&#x4E8B;&#x52A1;&#x673A;&#x5236;&#xFF09;   </li>
+</ul>
+<p><img src="../../assets/react/&#x4E8B;&#x4EF6;&#x5408;&#x6210;.jpg" alt="&#x4E8B;&#x4EF6;&#x5408;&#x6210;">   </p>
+<h3 id="&#x7EC4;&#x4EF6;&#x751F;&#x547D;&#x5468;&#x671F;"><a name="&#x7EC4;&#x4EF6;&#x751F;&#x547D;&#x5468;&#x671F;" class="anchor-navigation-ex-anchor" href="#&#x7EC4;&#x4EF6;&#x751F;&#x547D;&#x5468;&#x671F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.6. &#x7EC4;&#x4EF6;&#x751F;&#x547D;&#x5468;&#x671F;</h3>
+<p><img src="../../assets/react/lifecycle.png" alt="&#x751F;&#x547D;&#x5468;&#x671F;1">
+<img src="../../assets/react/lifecycle1.png" alt="&#x751F;&#x547D;&#x5468;&#x671F;2"></p>
+<h2 id="react-&#x9AD8;&#x7EA7;&#x7279;&#x6027;"><a name="react-&#x9AD8;&#x7EA7;&#x7279;&#x6027;" class="anchor-navigation-ex-anchor" href="#react-&#x9AD8;&#x7EA7;&#x7279;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. React &#x9AD8;&#x7EA7;&#x7279;&#x6027;</h2>
+<ul>
+<li>&#x51FD;&#x6570;&#x7EC4;&#x4EF6;</li>
+<li>&#x975E;&#x53D7;&#x63A7;&#x7EC4;&#x4EF6;</li>
+<li>Portals</li>
+<li>context</li>
+<li>&#x5F02;&#x6B65;&#x7EC4;&#x4EF6;</li>
+<li>&#x6027;&#x80FD;&#x4F18;&#x5316;</li>
+<li>&#x9AD8;&#x9636;&#x7EC4;&#x4EF6; HOC</li>
+<li>Render Props</li>
+</ul>
+<h3 id="&#x51FD;&#x6570;&#x7EC4;&#x4EF6;&#x4E0E;&#x7C7B;&#x7EC4;&#x4EF6;&#x5BF9;&#x6BD4;"><a name="&#x51FD;&#x6570;&#x7EC4;&#x4EF6;&#x4E0E;&#x7C7B;&#x7EC4;&#x4EF6;&#x5BF9;&#x6BD4;" class="anchor-navigation-ex-anchor" href="#&#x51FD;&#x6570;&#x7EC4;&#x4EF6;&#x4E0E;&#x7C7B;&#x7EC4;&#x4EF6;&#x5BF9;&#x6BD4;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. &#x51FD;&#x6570;&#x7EC4;&#x4EF6;&#x4E0E;&#x7C7B;&#x7EC4;&#x4EF6;&#x5BF9;&#x6BD4;</h3>
+<ul>
+<li>&#x7EAF;&#x51FD;&#x6570;&#xFF0C;&#x8F93;&#x5165;props&#xFF0C;&#x8F93;&#x51FA;jsx</li>
+<li>&#x6CA1;&#x6709;&#x5B9E;&#x4F8B;&#xFF0C;&#x6CA1;&#x6709;&#x751F;&#x547D;&#x5468;&#x671F;&#xFF0C;&#x65E0;state</li>
+<li>&#x4E0D;&#x80FD;&#x6269;&#x5C55;&#x5176;&#x5B83;&#x65B9;&#x6CD5;   <blockquote>
+<p>&#x66F4;&#x9002;&#x7528;&#x4E8E;&#x7EAF;ui&#x7EC4;&#x4EF6;    </p>
+</blockquote>
+</li>
+</ul>
+<h3 id="&#x975E;&#x53D7;&#x63A7;&#x7EC4;&#x4EF6;"><a name="&#x975E;&#x53D7;&#x63A7;&#x7EC4;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x975E;&#x53D7;&#x63A7;&#x7EC4;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.2. &#x975E;&#x53D7;&#x63A7;&#x7EC4;&#x4EF6;</h3>
+<ul>
+<li>ref</li>
+<li>defaultValue defaultChecked</li>
+<li>&#x624B;&#x52A8;&#x64CD;&#x4F5C; DOM &#x5143;&#x7D20; (input file , &#x6587;&#x4EF6;&#x4E0A;&#x4F20; &#xFF1B; &#x5BCC;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;)</li>
+</ul>
+<h4 id="&#x5BF9;&#x6BD4;&#xFF1A;&#x53D7;&#x63A7;&#x3001;&#x975E;&#x662F;&#x540E;&#x7A7A;"><a name="&#x5BF9;&#x6BD4;&#xFF1A;&#x53D7;&#x63A7;&#x3001;&#x975E;&#x662F;&#x540E;&#x7A7A;" class="anchor-navigation-ex-anchor" href="#&#x5BF9;&#x6BD4;&#xFF1A;&#x53D7;&#x63A7;&#x3001;&#x975E;&#x662F;&#x540E;&#x7A7A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5BF9;&#x6BD4;&#xFF1A;&#x53D7;&#x63A7;&#x3001;&#x975E;&#x662F;&#x540E;&#x7A7A;</h4>
+<blockquote>
+<ul>
+<li>&#x4F18;&#x5148;&#x4F7F;&#x7528;&#x53D7;&#x63A7;&#x7EC4;&#x4EF6;&#xFF0C;&#x7B26;&#x5408;React&#x8BBE;&#x8BA1;&#x539F;&#x5219;   </li>
+<li>&#x5FC5;&#x987B;&#x64CD;&#x4F5C; DOM &#x65F6;&#xFF0C;&#x4F7F;&#x7528;&#x975E;&#x53D7;&#x63A7;&#x7EC4;&#x4EF6;  </li>
+</ul>
+</blockquote>
+<h3 id="portals"><a name="portals" class="anchor-navigation-ex-anchor" href="#portals"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.3. Portals</h3>
+<blockquote>
+<p>&#x7EC4;&#x4EF6;&#x9ED8;&#x8BA4;&#x4F1A;&#x6309;&#x7167;&#x65E2;&#x5B9A;&#x5C42;&#x6B21;&#x5D4C;&#x5957;&#x6E32;&#x67D3;&#xFF0C;&#x5982;&#x4F55;&#x8BA9;&#x7EC4;&#x4EF6;&#x6E32;&#x67D3;&#x5230;&#x7236;&#x7EC4;&#x4EF6;&#x5916;&#xFF1F;   </p>
+</blockquote>
+<pre class="language-"><code class="lang-javascript"><span class="token function">render</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> ReactDom<span class="token punctuation">.</span><span class="token function">createPortal</span><span class="token punctuation">(</span><span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+            &#x7EC4;&#x4EF6;&#x4F1A;&#x518D;body&#x4E0B;
+            <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span> <span class="token punctuation">,</span> 
+      document<span class="token punctuation">.</span>body
+    <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="context"><a name="context" class="anchor-navigation-ex-anchor" href="#context"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.4. context</h3>
+<h6 id="&#x4F7F;&#x7528;&#x573A;&#x666F;"><a name="&#x4F7F;&#x7528;&#x573A;&#x666F;" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;&#x573A;&#x666F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528;&#x573A;&#x666F;</h6>
+<blockquote>
+<ul>
+<li>&#x8BBE;&#x7F6E;&#x516C;&#x5171;&#x4FE1;&#x606F;&#xFF08;&#x8BED;&#x8A00;&#xFF0C;&#x4E3B;&#x9898;&#xFF09;   </li>
+</ul>
+</blockquote>
+<h3 id="&#x5F02;&#x6B65;&#x7EC4;&#x4EF6;"><a name="&#x5F02;&#x6B65;&#x7EC4;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x5F02;&#x6B65;&#x7EC4;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.5. &#x5F02;&#x6B65;&#x7EC4;&#x4EF6;</h3>
+<ul>
+<li>React.lazy</li>
+<li><p>React.Suspense    </p>
+<pre class="language-"><code class="lang-javascript"><span class="token keyword">const</span> Demo <span class="token operator">=</span> React<span class="token punctuation">.</span><span class="token function">lazy</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">&apos;./xxx/xxx.js&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token keyword">return</span><span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>React<span class="token punctuation">.</span>Suspense fallback<span class="token operator">=</span><span class="token punctuation">{</span><span class="token operator">&lt;</span>div<span class="token operator">&gt;</span> <span class="token operator">...</span><span class="token punctuation">.</span> loading<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span>Demo <span class="token operator">/</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>React<span class="token punctuation">.</span>Suspense<span class="token operator">&gt;</span>
+  <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="&#x6027;&#x80FD;&#x4F18;&#x5316;"><a name="&#x6027;&#x80FD;&#x4F18;&#x5316;" class="anchor-navigation-ex-anchor" href="#&#x6027;&#x80FD;&#x4F18;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.6. &#x6027;&#x80FD;&#x4F18;&#x5316;</h3>
+</li>
+<li><p>shouldComponentUpdate(&#x7B80;&#x79F0;SCU)</p>
+</li>
+<li>PureComponent &#x548C; React.Memo</li>
+<li>&#x4E0D;&#x53EF;&#x53D8;&#x503C; immu<h6 id="scu"><a name="scu" class="anchor-navigation-ex-anchor" href="#scu"><i class="fa fa-link" aria-hidden="true"></i></a>SCU</h6>
+<blockquote>
+<p>[!NOTE]
+&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x8981;SCU &#x800C;&#x4E0D;&#x662F; React &#x6846;&#x67B6;&#x81EA;&#x5DF1;&#x628A; SCU &#x7ED9;&#x505A;&#x4E86;&#xFF1F;    </p>
+</blockquote>
+</li>
+<li>1&#x3001;&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#x90FD;&#x4E0D;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x4F18;&#x5316;&#xFF0C;&#x628A;&#x4F18;&#x5316;&#x7684;&#x63A7;&#x5236;&#x6743;&#x4EA4;&#x7ED9;&#x5F00;&#x53D1;&#x8005;   </li>
+<li>2&#x3001;props&#x3001;state&#x503C;&#x7684;&#x7ED3;&#x6784;&#x65E0;&#x6CD5;&#x63A7;&#x5236;&#x53EF;&#x80FD;&#x5F88;&#x590D;&#x6742;&#xFF0C;&#x5982;&#x679C;&#x4F7F;&#x7528;&#xFF1A;_.isEqual &#x662F;&#x8FDB;&#x884C;&#x6DF1;&#x5EA6;&#x6BD4;&#x8F83;&#xFF0C;&#x90A3;&#x4E48;&#x6BD4;&#x8F83;&#x8017;&#x8D39;&#x6027;&#x80FD;    </li>
+<li>3&#x3001;React &#x6709;&#x9ED8;&#x8BA4;&#x6570;&#x636E;&#x4E0D;&#x53EF;&#x53D8;&#x7684;&#x5F00;&#x53D1;&#x89C4;&#x5219;&#xFF0C;&#x5373;&#x4FEE;&#x6539;state&#x901A;&#x8FC7;setState&#x65B9;&#x5F0F;&#xFF0C;&#x4F46;&#x5047;&#x5982;&#x5F00;&#x53D1;&#x800C;&#x672A;&#x9075;&#x5FAA;&#x6B64;&#x89C4;&#x5219;&#xFF0C;&#x800C;&#x6846;&#x67B6;&#x672C;&#x8EAB;&#x6709;&#x5728;SCU&#x4E2D;&#x505A;&#x4E86;_.isEqual &#x7684;&#x5224;&#x65AD;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x4F1A;&#x5BFC;&#x81F4;&#x9875;&#x9762;&#x4E0D;&#x4F1A;&#x66F4;&#x65B0;&#xFF0C;&#x5982;&#x4E0B;&#x793A;&#x4F8B;&#xFF1A;   </li>
+</ul>
+<pre class="language-"><code class="lang-javascript"><span class="token comment">// &#x7236;&#x7EC4;&#x4EF6;</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>list<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">id</span> <span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">title</span> <span class="token operator">:</span> <span class="token string">&apos;add&apos;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">list</span> <span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>list
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token comment">// &#x5B50;&#x7EC4;&#x4EF6;  &#x5047;&#x5982;&#x6846;&#x67B6;&#x505A;&#x4E86;&#x6B64;&#x4F18;&#x5316; &#x90A3;&#x4E48;&#x5B50;&#x7EC4;&#x4EF6;&#x5C06;&#x4E0D;&#x4F1A;&#x66F4;&#x65B0;</span>
+<span class="token function">shouldComponentUpdate</span><span class="token punctuation">(</span><span class="token parameter">nextProps<span class="token punctuation">,</span>nextState</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>_<span class="token punctuation">.</span><span class="token function">isEqual</span><span class="token punctuation">(</span>nextProps<span class="token punctuation">.</span>list <span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>list<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token boolean">false</span>  <span class="token comment">//&#x4E0D;&#x66F4;&#x65B0;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token boolean">true</span>  <span class="token comment">//&#x66F4;&#x65B0;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<blockquote>
+<p>[!DANGER]</p>
+<ul>
+<li>SCU &#x9ED8;&#x8BA4;&#x8FD4;&#x56DE; true     </li>
+</ul>
+</blockquote>
+<hr>
+<h6 id="purecomponent"><a name="purecomponent" class="anchor-navigation-ex-anchor" href="#purecomponent"><i class="fa fa-link" aria-hidden="true"></i></a>PureComponent</h6>
+<blockquote>
+<p>[!NOTE]</p>
+<ul>
+<li>PureComponent,SCU &#x4E2D;&#x5B9E;&#x73B0;&#x4E86;&#x6D45;&#x6BD4;&#x8F83;   </li>
+</ul>
+</blockquote>
+<pre class="language-"><code class="lang-javascript"><span class="token keyword">class</span> <span class="token class-name">t</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>PureComponent</span>
+</code></pre>
+<h6 id="memo"><a name="memo" class="anchor-navigation-ex-anchor" href="#memo"><i class="fa fa-link" aria-hidden="true"></i></a>memo</h6>
+<pre class="language-"><code class="lang-javascript"><span class="token keyword">export</span><span class="token punctuation">.</span>default React<span class="token punctuation">.</span><span class="token function">memo</span><span class="token punctuation">(</span><span class="token constant">T</span><span class="token punctuation">,</span>areEqual<span class="token punctuation">)</span>
+</code></pre>
+<h6 id="immutablejs"><a name="immutablejs" class="anchor-navigation-ex-anchor" href="#immutablejs"><i class="fa fa-link" aria-hidden="true"></i></a>immutable.js</h6>
+<blockquote>
+<p>&#x4FDD;&#x8BC1;React&#x8BBE;&#x8BA1;&#x6570;&#x636E;&#x4E0D;&#x53EF;&#x53D8;&#x503C;&#x7684;&#x601D;&#x60F3;&#xFF0C;&#x5982;&#x679C;&#x60F3;&#x8981;&#x5B9E;&#x73B0;&#xFF0C;&#x4F20;&#x7EDF;&#x7684;&#x65B9;&#x5F0F;&#x5C31;&#x662F;&#x4F7F;&#x7528;&#x6DF1;&#x62F7;&#x8D1D;&#xFF0C;&#x4F46;&#x662F;&#x6DF1;&#x62F7;&#x8D1D;&#x592A;&#x8017;&#x6027;&#x80FD;<br>immutable.js &#x57FA;&#x4E8E;&#x5171;&#x4EAB;&#x6570;&#x636E;&#xFF0C;&#x901F;&#x5EA6;&#x597D;     </p>
+</blockquote>
+<h3 id="&#x9AD8;&#x9636;&#x7EC4;&#x4EF6;"><a name="&#x9AD8;&#x9636;&#x7EC4;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x9AD8;&#x9636;&#x7EC4;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.7. &#x9AD8;&#x9636;&#x7EC4;&#x4EF6;</h3>
+<h6 id="&#x5E94;&#x7528;&#x573A;&#x666F;"><a name="&#x5E94;&#x7528;&#x573A;&#x666F;" class="anchor-navigation-ex-anchor" href="#&#x5E94;&#x7528;&#x573A;&#x666F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E94;&#x7528;&#x573A;&#x666F;</h6>
+<ul>
+<li>&#x751F;&#x547D;&#x5468;&#x671F;&#x52AB;&#x6301;&#xFF08;&#x65E5;&#x5FD7;&#xFF0C;&#x6253;&#x70B9;&#xFF0C;&#x6027;&#x80FD;&#x5206;&#x6790;&#xFF09;</li>
+<li>&#x516C;&#x5171;&#x903B;&#x8F91;&#x62BD;&#x53D6;</li>
+<li>&#x6761;&#x4EF6;&#x6E32;&#x67D3;</li>
+</ul>
+<h6 id="&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;"><a name="&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;</h6>
+<ul>
+<li>&#x5C5E;&#x6027;&#x4EE3;&#x7406; </li>
+<li>&#x53CD;&#x5411;&#x7EE7;&#x627F;</li>
+</ul>
+<h3 id="render-props"><a name="render-props" class="anchor-navigation-ex-anchor" href="#render-props"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.8. Render Props</h3>
+<h2 id="redux"><a name="redux" class="anchor-navigation-ex-anchor" href="#redux"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. Redux</h2>
+<h3 id="&#x57FA;&#x672C;api"><a name="&#x57FA;&#x672C;api" class="anchor-navigation-ex-anchor" href="#&#x57FA;&#x672C;api"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.1. &#x57FA;&#x672C;api</h3>
+<ul>
+<li>dispatch&#xFF08;action&#xFF09;</li>
+<li>reducer -&gt; newState</li>
+<li>subscribe &#x89E6;&#x53D1;&#x901A;&#x77E5;</li>
+</ul>
+<h3 id="&#x7ED3;&#x5408;react&#x4F7F;&#x7528;-react-redux"><a name="&#x7ED3;&#x5408;react&#x4F7F;&#x7528;-react-redux" class="anchor-navigation-ex-anchor" href="#&#x7ED3;&#x5408;react&#x4F7F;&#x7528;-react-redux"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.2. &#x7ED3;&#x5408;react&#x4F7F;&#x7528; react-redux</h3>
+<ul>
+<li><provider store="{store}"></provider></li>
+<li>connect</li>
+<li>mapStateToProps mapDispatchToProps</li>
+</ul>
+<h3 id="&#x5F02;&#x6B65;action"><a name="&#x5F02;&#x6B65;action" class="anchor-navigation-ex-anchor" href="#&#x5F02;&#x6B65;action"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.3. &#x5F02;&#x6B65;action</h3>
+<ul>
+<li>redux-thunk</li>
+<li>redux-promise</li>
+<li>redux-saga   </li>
+</ul>
+<pre class="language-"><code class="lang-javascript"><span class="token keyword">import</span> <span class="token punctuation">{</span>createStore <span class="token punctuation">,</span> applyMiddleware<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;redux&quot;</span>
+<span class="token keyword">import</span> thunk <span class="token keyword">from</span> <span class="token string">&quot;redux-thunk&quot;</span>
+<span class="token keyword">import</span> rooteReducer <span class="token keyword">from</span> <span class="token string">&quot;./reducers/index&quot;</span>
+<span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">crateStore</span><span class="token punctuation">(</span>rootReducer <span class="token punctuation">,</span> <span class="token function">applyMiddleware</span><span class="token punctuation">(</span>thunk<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="redux-&#x4E2D;&#x95F4;&#x4EF6;"><a name="redux-&#x4E2D;&#x95F4;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#redux-&#x4E2D;&#x95F4;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.4. redux &#x4E2D;&#x95F4;&#x4EF6;</h3>
+<p><img src="../../assets/react/redux-thunk.jpg" alt="redux&#x6D41;&#x7A0B;&#x56FE;">
+<img src="../../assets/react/redux.jpg" alt="redux&#x6D41;&#x7A0B;&#x56FE;"></p>
+<h2 id="&#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;"><a name="&#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;" class="anchor-navigation-ex-anchor" href="#&#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. &#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;</h2>
+<ul>
+<li>&#x7EAF;&#x51FD;&#x6570;</li>
+<li><p>&#x4E0D;&#x53EF;&#x53D8;&#x503C;</p>
+<h2 id="&#x53C2;&#x8003;&#x6587;&#x7AE0;"><a name="&#x53C2;&#x8003;&#x6587;&#x7AE0;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x8003;&#x6587;&#x7AE0;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. &#x53C2;&#x8003;&#x6587;&#x7AE0;</h2>
+</li>
+<li><p><a href="https://juejin.cn/post/6844904050236850184" target="_blank">React&#x9AD8;&#x9636;&#x7EC4;&#x4EF6;(HOC)&#x7684;&#x5165;&#x95E8;&#x53CA;&#x5B9E;&#x8DF5;</a></p>
+</li>
+<li><a href="https://www.jianshu.com/p/514fe21b9914" target="_blank">&#x8BE6;&#x89E3;React&#x751F;&#x547D;&#x5468;&#x671F;(&#x5305;&#x62EC;react16&#x6700;&#x65B0;&#x7248;)</a></li>
+<li><a href="https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/" target="_blank">&#x751F;&#x547D;&#x5468;&#x671F;&#x56FE;</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="vue原理.html" class="navigation navigation-prev " aria-label="Previous page: vue原理">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="react原理.html" class="navigation navigation-next " aria-label="Next page: react原理">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"react使用","level":"1.3.9","depth":2,"next":{"title":"react原理","level":"1.3.10","depth":2,"path":"content/work/react原理.md","ref":"content/work/react原理.md","articles":[]},"previous":{"title":"vue原理","level":"1.3.8","depth":2,"path":"content/work/vue原理.md","ref":"content/work/vue原理.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","search-plus","splitter","copy-code-button","expandable-chapters-small","github-buttons","anchor-navigation-ex","flexible-alerts","prism","-highlight"],"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"github-buttons":{"buttons":[{"user":"hanyanjun","repo":"gitbook","type":"star","size":"small"}]},"expandable-chapters-small":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"content/work/react.md","mtime":"2022-03-14T07:11:57.504Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-14T07:12:44.055Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

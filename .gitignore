@@ -1,0 +1,17 @@
+
+# dependencies
+**/node_modules
+
+# misc
+.DS_Store
+npm-debug.log*
+yarn-error.log
+.idea
+
+/coverage
+yarn.lock
+package-lock.json
+*bak
+.temp/**
+# config
+

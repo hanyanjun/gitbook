@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script >
+    var isValid = function(s) {
+    let len = s.length;
+    if(len % 2 === 1) return false;
+    let map = {
+        left : {
+            '(' : ')',
+            '[' : ']',
+            '{' : '}',
+        },
+        right : {
+            ')' : '(',
+            ']' : '[',
+            '}' : '{'
+        }
+    }
+    const stack = [];
+    for (let i = 0; i < len ; i+= 1){
+        const c = s[i];
+        if(c in map.left){
+            stack.push(c)
+        }else if( c in map.right){
+            const t = stack[stack.length - 1];
+            if(map.left[t] === c){
+                stack.pop()
+            }
+            else{
+            return false
+             }
+        }
+    }
+    return stack.length === 0
+};
+console.log(isValid("([}}])"))
+
+</script>
